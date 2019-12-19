@@ -17,7 +17,7 @@ pluralizeListTitles     = false
 disableLanguages        = [""]
 
 [params]
-  mainSections = ["blog", "post"]
+  mainSections = ["post"]
   # Loads CSS and JavaScript files. The variable is an array so that you can load
   # multiple/additional files if necessary. The standard theme files can be loaded
   # by adding the value, "default". Default includes the add-on.css and and-on.js.
@@ -29,7 +29,7 @@ disableLanguages        = [""]
   highlightjsTheme      = "github"
   highlightjsLang       = ["html", "css", "js", "toml"]
   # Sets where "View More Posts" links to
-  viewMorePostsLink     = "/blog/"
+  viewMorePostsLink     = "/posts/"
   # Activate Estimated Reading Times, which appear in the post headers
   readingTime           = true
   # Sets which Social Share links appear in posts.
@@ -71,7 +71,7 @@ disableLanguages        = [""]
     # This appears at the top of the sidebar above params.intro.header.
     # A width of less than 100px is recommended from a design perspective.
     [params.intro.pic]
-      src                 = "/img/main/logo.jpg"
+      src                 = "/img/main/profile-picture.jpg"
       # Masks image in a certain shape. Supported are circle, triangle, diamond, and hexagon.
       shape               = "circle"
       width               = ""
@@ -135,9 +135,9 @@ disableLanguages        = [""]
     weight            = 3
 
   [[menu.main]]
-    name              = "Blog"
-    identifier        = "matt9j:blog"
-    url               = "/blog/"
+    name              = "Blog Posts"
+    identifier        = "matt9j:posts"
+    url               = "/posts/"
     pre               = "<i class='far fa-newspaper'></i>"
     weight            = 4
 
