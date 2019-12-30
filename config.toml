@@ -78,7 +78,7 @@ disableLanguages        = [""]
       alt                 = "matt9j logo"
 
   [params.sidebar]
-    about               = "test"
+    about               = "Currently a grad student at the University of Washington in the ICTD Lab..."
     # Sets the number of recent posts to show in the sidebar. The default value is 5.
     postAmount          = 5
     # set to show or to hide categories in the sidebar
