@@ -64,7 +64,7 @@ disableLanguages        = [""]
   # required for proper functionality. HTML is supported within the params.
   [params.intro]
     header                = "matt9j"
-    paragraph             = "A Computer Science and Networking researcher interested in the challenges of networking at the end of the long tail of connectivity"
+    paragraph             = "A networking researcher interested in the challenges of infrastructure at the end of the tail of connectivity"
     rssIntro              = true
     socialIntro           = true
 
