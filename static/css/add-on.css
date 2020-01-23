@@ -4,3 +4,30 @@
   is an official part of the theme (ex. Pull Requests) should be included in main.css
   and follow the formatting and style given.
 */
+
+.post header {
+    word-break: break-word;
+}
+
+.publication h1,
+.publication h2,
+.publication h3,
+.publication h4,
+.publication h5,
+.publication h6 {
+    text-transform: none;
+    letter-spacing: 0em;
+}
+
+.publication header .title {
+    width: 100%;
+}
+
+.publication p, .publication div p {
+    text-align: left;
+}
+
+h4 {
+    line-height: 1.65;
+    margin-bottom: 0.1em;
+}
