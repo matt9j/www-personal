@@ -13,7 +13,7 @@ preserveTaxonomyNames   = true
 paginate                = 5
 disqusShortname         = ""
 googleAnalytics         = ""
-pluralizeListTitles     = false
+pluralizeListTitles     = true
 disableLanguages        = [""]
 
 [params]
