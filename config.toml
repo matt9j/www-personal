@@ -76,7 +76,7 @@ disableLanguages        = [""]
       src                 = "/img/main/profile-picture.jpg"
       # Masks image in a certain shape. Supported are circle, triangle, diamond, and hexagon.
       shape               = "circle"
-      width               = ""
+      width               = "50%"
       alt                 = "matt9j logo"
 
   [params.sidebar]
