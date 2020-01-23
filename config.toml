@@ -67,6 +67,8 @@ disableLanguages        = [""]
     paragraph             = "A networking researcher interested in the challenges of infrastructure at the end of the tail of connectivity"
     rssIntro              = true
     socialIntro           = true
+    alwaysOnHomepage      = true
+    hideOnMobile          = true
 
     # This appears at the top of the sidebar above params.intro.header.
     # A width of less than 100px is recommended from a design perspective.
