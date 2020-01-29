@@ -10,7 +10,7 @@ enableGitInfo = true
 DefaultContentLanguage  = "en"
 theme                   = "hugo-future-imperfect-slim"
 preserveTaxonomyNames   = true
-paginate                = 5
+paginate                = 10
 disqusShortname         = ""
 googleAnalytics         = ""
 pluralizeListTitles     = true
@@ -35,6 +35,7 @@ disableLanguages        = [""]
   # Sets which Social Share links appear in posts.
   # Options are twitter, facebook, reddit, linkedin, pinterest, email
   socialShare           = ["email"]
+  summary_length        = 300
 
   [params.meta]
     # Sets the meta tag description
