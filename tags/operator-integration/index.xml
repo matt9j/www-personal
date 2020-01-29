@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>operator-integration on matt9j:Matt Johnson</title>
+    <link>https://matt9j.net/tags/operator-integration/</link>
+    <description>Recent content in operator-integration on matt9j:Matt Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://matt9j.net/tags/operator-integration/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scaling community cellular networks with community cellular manager</title>
+      <link>https://matt9j.net/publications/nsdi19/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/nsdi19/</guid>
+      <description>abstract: Hundreds of millions of people still live beyond the coverage of basic mobile connectivity, primarily in rural areas with low population density. Mobile-network operators (MNOs) traditionally struggle to justify expansion into these rural areas due to the high infrastructure costs necessary to provide service. Community cellular networks, networks built &amp;ldquo;by and for&amp;rdquo; the people they serve, represent an alternative model that, to an extent, bypasses these business case limitations and enables sustainable rural coverage.</description>
+    </item>
+    
+  </channel>
+</rss>

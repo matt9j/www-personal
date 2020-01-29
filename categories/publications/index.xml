@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>publications on matt9j:Matt Johnson</title>
+    <link>https://matt9j.net/categories/publications/</link>
+    <description>Recent content in publications on matt9j:Matt Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://matt9j.net/categories/publications/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Scaling community cellular networks with community cellular manager</title>
+      <link>https://matt9j.net/publications/nsdi19/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/nsdi19/</guid>
+      <description>abstract: Hundreds of millions of people still live beyond the coverage of basic mobile connectivity, primarily in rural areas with low population density. Mobile-network operators (MNOs) traditionally struggle to justify expansion into these rural areas due to the high infrastructure costs necessary to provide service. Community cellular networks, networks built &amp;ldquo;by and for&amp;rdquo; the people they serve, represent an alternative model that, to an extent, bypasses these business case limitations and enables sustainable rural coverage.</description>
+    </item>
+    
+    <item>
+      <title>dLTE: Building a more WiFi-like Cellular Network: (Instead of the Other Way Around)</title>
+      <link>https://matt9j.net/publications/hotnets2018/</link>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/hotnets2018/</guid>
+      <description>abstract: The radio interfaces and network architectures of WiFi and cellular systems are converging along many dimensions. While both systems are largely adopting the centralized architecture of traditional cellular deployments, this design comes with fundamental disadvantages that limit how these networks grow and develop. As a response, we present Distributed LTE (dLTE), an architecture offering the high radio performance of licensed and coordinated waveforms as well as the openness to organic expansion and growth of traditional WiFi.</description>
+    </item>
+    
+    <item>
+      <title>Crowdsourcing Rural Network Maintenance and Repair via Network Messaging</title>
+      <link>https://matt9j.net/publications/chi2018/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/chi2018/</guid>
+      <description>abstract: Repair and maintenance requirements limit the successful operation of rural infrastructure. Current best practices are centralized management, which requires travel from urban areas and is prohibitively expensive, or intensively training community members, which limits scaling. We explore an alternative model: crowdsourcing repair from the community. Leveraging a Community Cellular Network in the remote Philippines, we sent SMS to all active network subscribers (n = 63) requesting technical support. From the pool of physical respondents, we explored their ability to repair through mock failures and conducted semi-structured interviews about their experiences with repair.</description>
+    </item>
+    
+    <item>
+      <title>Unplanned Obsolescence: Hardware and Software After Collapse</title>
+      <link>https://matt9j.net/publications/limits2017/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/limits2017/</guid>
+      <description>abstract: In a setting of economic and infrastructural collapse, the inability to manufacture and maintain computing resources will be an enormous limitation on the continued use of technology. The concept of &amp;ldquo;rot&amp;rdquo; exists for both hardware and software, referring to a slow loss of functionality over time. Given a desire to maintain technological capability, we raise a variety of questions about technology use in such a scenario. How long will current hardware last through repair, robust construction, and good maintenance practices?</description>
+    </item>
+    
+    <item>
+      <title>Trust and Technology Repair Infrastructures in the Remote Rural Philippines: Navigating Urban-Rural Seams</title>
+      <link>https://matt9j.net/publications/cscw2019/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/cscw2019/</guid>
+      <description>abstract: This paper analyzes the processes and challenges of technology repair in remote, low-income areas far from standard ICT repair infrastructure. Our sites of study are the fishing and farming villages of Dibut, Diotorin, and Dikapinisan in Aurora Province, Philippines, located in coastal coves against a mountain range. Residents are geographically isolated from urban areas, with the nearest peri-urban center of Baler a boat trip of several hours away, infeasible in some sea conditions.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://matt9j.net/categories/</loc>
+    <lastmod>2020-01-29T12:31:12-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://matt9j.net/es/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://matt9j.net/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/go/</loc>
+    <lastmod>2020-01-29T12:31:12-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/golang/</loc>
+    <lastmod>2020-01-29T12:31:12-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/posts/hello-world/</loc>
+    <lastmod>2020-01-29T12:31:12-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/hugo/</loc>
+    <lastmod>2020-01-29T12:31:12-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/</loc>
+    <lastmod>2020-01-29T12:31:12-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://matt9j.net/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://matt9j.net/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/posts/</loc>
+    <lastmod>2020-01-29T12:31:12-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/categories/software-development/</loc>
+    <lastmod>2020-01-29T12:31:12-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/</loc>
+    <lastmod>2020-01-29T12:31:12-08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://matt9j.net/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://matt9j.net/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/ccm/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/categories/cellular/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/community-cellular/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/community-network/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/management/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/operator-integration/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/philippines/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/categories/publications/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/publications/nsdi19/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/decentralization/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/publications/hotnets2018/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/ictd/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/lte/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/wifi/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/crowdsourcing/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/publications/chi2018/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/internet-access/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/rural-development/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/technology-for-development/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/hardware/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/longevity/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/malware/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/security/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/software/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/publications/limits2017/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/publications/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/about/</loc>
+    <lastmod>2020-01-29T11:44:34-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/repair/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/publications/cscw2019/</loc>
+    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+  </url>
+  
+</urlset>

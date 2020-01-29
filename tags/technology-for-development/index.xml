@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>technology-for-development on matt9j:Matt Johnson</title>
+    <link>https://matt9j.net/tags/technology-for-development/</link>
+    <description>Recent content in technology-for-development on matt9j:Matt Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 21 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://matt9j.net/tags/technology-for-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Crowdsourcing Rural Network Maintenance and Repair via Network Messaging</title>
+      <link>https://matt9j.net/publications/chi2018/</link>
+      <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/chi2018/</guid>
+      <description>abstract: Repair and maintenance requirements limit the successful operation of rural infrastructure. Current best practices are centralized management, which requires travel from urban areas and is prohibitively expensive, or intensively training community members, which limits scaling. We explore an alternative model: crowdsourcing repair from the community. Leveraging a Community Cellular Network in the remote Philippines, we sent SMS to all active network subscribers (n = 63) requesting technical support. From the pool of physical respondents, we explored their ability to repair through mock failures and conducted semi-structured interviews about their experiences with repair.</description>
+    </item>
+    
+    <item>
+      <title>Trust and Technology Repair Infrastructures in the Remote Rural Philippines: Navigating Urban-Rural Seams</title>
+      <link>https://matt9j.net/publications/cscw2019/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/cscw2019/</guid>
+      <description>abstract: This paper analyzes the processes and challenges of technology repair in remote, low-income areas far from standard ICT repair infrastructure. Our sites of study are the fishing and farming villages of Dibut, Diotorin, and Dikapinisan in Aurora Province, Philippines, located in coastal coves against a mountain range. Residents are geographically isolated from urban areas, with the nearest peri-urban center of Baler a boat trip of several hours away, infeasible in some sea conditions.</description>
+    </item>
+    
+  </channel>
+</rss>

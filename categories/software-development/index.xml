@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software-development on matt9j:Matt Johnson</title>
+    <link>https://matt9j.net/categories/software-development/</link>
+    <description>Recent content in software-development on matt9j:Matt Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://matt9j.net/categories/software-development/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://matt9j.net/posts/hello-world/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/posts/hello-world/</guid>
+      <description>Over the last few months I&amp;rsquo;ve re-worked a lot of my own personal infrastructure, and learned a lot along the way. My ultimate goal will be to get all my infrastructure off of feed-based social media platforms and see how hard it is to recapture some of the magic of the young web, but of course that&amp;rsquo;s a long road ahead :)
+I&amp;rsquo;m excited today to have finally finished one step on that journey, modernizing my old manual site onto a framework built around markdown content and a static site generator (I went with Hugo since I have some golang experience, I&amp;rsquo;m a little afraid of node_modules, and of course it&amp;rsquo;s fast).</description>
+    </item>
+    
+  </channel>
+</rss>

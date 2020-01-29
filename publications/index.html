@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title> - matt9j:Matt Johnson</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <meta name="generator" content="Hugo 0.63.2" />
+  <meta itemprop="name" content="">
+<meta itemprop="description" content="">
+  <meta property="og:title" content="" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://matt9j.net/publications/" />
+
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@matt9j"/>
+
+  
+
+  
+  
+    
+      <link rel="stylesheet" href="/css/normalize.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+      
+      
+      <link rel="stylesheet" href="/css/main.min.504143a59b3493e96bf31056b71cfce2d797d161f0dd777881b0a402e351bd8b.css" integrity="sha256-UEFDpZs0k&#43;lr8xBWtxz84teX0WHw3Xd4gbCkAuNRvYs=">
+      <link rel="stylesheet" href="/css/add-on.css">
+    
+  
+  
+  
+  
+    
+  
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            matt9j:
+          
+          
+            publications
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        
+          
+          
+            <a href="/about/" class="link"><i class='fas fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/publications/" class="link"><i class='fas fa-book'></i> Publications</a>
+          
+        
+      
+        
+          
+          
+            <a href="/posts/" class="link"><i class='far fa-newspaper'></i> Blog Posts</a>
+          
+        
+      
+        
+          
+          
+            <a href="/categories/" class="link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+        
+          
+          
+            <a href="/contact/" class="link"><i class='fas fa-envelope'></i> Contact</a>
+          
+        
+      
+      
+      
+    </menu>
+    
+    
+    <a href="#lang-menu" class="lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="lang-menu" class="flyout-menu">
+  <a href="#" lang="en" class="link active">English (en)</a>
+  
+    
+      
+    
+      
+        <a href="/es" lang="es" class="no-lang link">Español (México) (es)</a>
+      
+    
+  
+</menu>
+
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" class="hidden-on-mobile">
+  <a href="/"><img src="/img/main/profile-picture.jpg" class="circle" width="50%" alt="matt9j logo" /></a>
+  <header>
+    <h1>matt9j</h1>
+  </header>
+  <main>
+    <p>A networking researcher interested in the challenges of infrastructure at the end of the tail of connectivity</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+    <li><a href="/publications/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+
+
+        <li><a href="//github.com/matt9j" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
+
+
+
+
+<li><a href="//linkedin.com/in/matthew-johnson-8a698236" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/matt9j" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+<li><a href="//scholar.google.com/citations?user=cTILBksAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+<li><a href="//orcid.org/0000-0003-2095-0225" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+
+<li><a href="//keybase.io/matt9j" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+
+
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main" class="publication-list">
+        
+          <article class="post publication">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/publications/nsdi19/">Scaling community cellular networks with community cellular manager</a></h2>
+    
+    
+      <p>Published at NSDI 2019</p>
+    
+  </div>
+</header>
+
+  
+  
+  <p>Hundreds of millions of people still live beyond the coverage of basic
+mobile connectivity, primarily in rural areas with low population
+density. Mobile-network operators (MNOs) traditionally struggle to
+justify expansion into these rural areas due to the high
+infrastructure costs necessary to&hellip;</p>
+  <footer>
+    <a href="/publications/nsdi19/" class="button big">Read more</a>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/categories/publications">publications</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/categories/cellular">cellular</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    
+    
+      <li class="tags">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/community-cellular">community-cellular</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/philippines">philippines</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/ccm">ccm</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/management">management</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/operator-integration">operator-integration</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/community-network">community-network</a></li>
+          
+        </ul>
+      </li>
+    
+  
+</ul>
+
+  </footer>
+</article>
+
+        
+          <article class="post publication">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/publications/hotnets2018/">dLTE: Building a more WiFi-like Cellular Network: (Instead of the Other Way Around)</a></h2>
+    
+    
+      <p>Published at HotNets 2018</p>
+    
+  </div>
+</header>
+
+  
+  
+  <p>The radio interfaces and network architectures of WiFi and cellular
+systems are converging along many dimensions. While both systems are
+largely adopting the centralized architecture of traditional cellular
+deployments, this design comes with fundamental disadvantages that
+limit how these networks&hellip;</p>
+  <footer>
+    <a href="/publications/hotnets2018/" class="button big">Read more</a>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/categories/publications">publications</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/categories/cellular">cellular</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    
+    
+      <li class="tags">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/lte">LTE</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/wifi">WiFi</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/decentralization">decentralization</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/ictd">ICTD</a></li>
+          
+        </ul>
+      </li>
+    
+  
+</ul>
+
+  </footer>
+</article>
+
+        
+          <article class="post publication">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/publications/chi2018/">Crowdsourcing Rural Network Maintenance and Repair via Network Messaging</a></h2>
+    
+    
+      <p>Published at CHI 2018</p>
+    
+  </div>
+</header>
+
+  
+  
+  <p>Repair and maintenance requirements limit the successful operation of
+rural infrastructure. Current best practices are centralized
+management, which requires travel from urban areas and is
+prohibitively expensive, or intensively training community members,
+which limits scaling. We explore an&hellip;</p>
+  <footer>
+    <a href="/publications/chi2018/" class="button big">Read more</a>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/categories/publications">publications</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/categories/cellular">cellular</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    
+    
+      <li class="tags">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/rural-development">Rural Development</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/internet-access">Internet Access</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/technology-for-development">Technology for Development</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/ictd">ICTD</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/crowdsourcing">Crowdsourcing</a></li>
+          
+        </ul>
+      </li>
+    
+  
+</ul>
+
+  </footer>
+</article>
+
+        
+          <article class="post publication">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/publications/limits2017/">Unplanned Obsolescence: Hardware and Software After Collapse</a></h2>
+    
+    
+      <p>Published at LIMITS 2017</p>
+    
+  </div>
+</header>
+
+  
+  
+  <p>In a setting of economic and infrastructural collapse, the inability
+to manufacture and maintain computing resources will be an enormous
+limitation on the continued use of technology. The concept of &ldquo;rot&rdquo;
+exists for both hardware and software, referring to a slow loss of
+functionality&hellip;</p>
+  <footer>
+    <a href="/publications/limits2017/" class="button big">Read more</a>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/categories/publications">publications</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    
+    
+      <li class="tags">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/longevity">longevity</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/hardware">hardware</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/software">software</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/security">security</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/malware">malware</a></li>
+          
+        </ul>
+      </li>
+    
+  
+</ul>
+
+  </footer>
+</article>
+
+        
+          <article class="post publication">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/publications/cscw2019/">Trust and Technology Repair Infrastructures in the Remote Rural Philippines: Navigating Urban-Rural Seams</a></h2>
+    
+    
+      <p>Published at CSCW 2019</p>
+    
+  </div>
+</header>
+
+  
+  
+  <p>This paper analyzes the processes and challenges of technology repair
+in remote, low-income areas far from standard ICT repair
+infrastructure. Our sites of study are the fishing and farming
+villages of Dibut, Diotorin, and Dikapinisan in Aurora Province,
+Philippines, located in coastal coves against&hellip;</p>
+  <footer>
+    <a href="/publications/cscw2019/" class="button big">Read more</a>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/categories/publications">publications</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    
+    
+      <li class="tags">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/repair">repair</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/rural-development">rural-development</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/technology-for-development">technology-for-development</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/ictd">ICTD</a></li>
+          
+        </ul>
+      </li>
+    
+  
+</ul>
+
+  </footer>
+</article>
+
+        
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/posts/hello-world/">Hello World</a></h1>
+          <time class="published" datetime="">January 29, 2020</time>
+        </header>
+      </article>
+      
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/publications/">publications<span class="count">5</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/cellular/">cellular<span class="count">3</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/software-development/">software-development<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  <section id="mini-bio">
+    <header>
+      <h1>About</h1>
+    </header>
+    <p>Currently a grad student at the University of Washington in the ICTD Lab...</p>
+    <footer>
+      <a href="/about" class="button">Learn More</a>
+    </footer>
+  </section>
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+    <li><a href="/publications/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+
+
+        <li><a href="//github.com/matt9j" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
+
+
+
+
+<li><a href="//linkedin.com/in/matthew-johnson-8a698236" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/matt9j" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+<li><a href="//scholar.google.com/citations?user=cTILBksAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+<li><a href="//orcid.org/0000-0003-2095-0225" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+
+<li><a href="//keybase.io/matt9j" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+
+
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        matt9j:Matt Johnson
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.63.2' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <script src=/js/util.js></script>
+  <script src=/js/main.js></script>
+  <script src=/js/add-on.js></script>
+  
+
+
+
+
+
+    </div>
+  </body>
+</html>

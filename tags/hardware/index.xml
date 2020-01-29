@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hardware on matt9j:Matt Johnson</title>
+    <link>https://matt9j.net/tags/hardware/</link>
+    <description>Recent content in hardware on matt9j:Matt Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://matt9j.net/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unplanned Obsolescence: Hardware and Software After Collapse</title>
+      <link>https://matt9j.net/publications/limits2017/</link>
+      <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/limits2017/</guid>
+      <description>abstract: In a setting of economic and infrastructural collapse, the inability to manufacture and maintain computing resources will be an enormous limitation on the continued use of technology. The concept of &amp;ldquo;rot&amp;rdquo; exists for both hardware and software, referring to a slow loss of functionality over time. Given a desire to maintain technological capability, we raise a variety of questions about technology use in such a scenario. How long will current hardware last through repair, robust construction, and good maintenance practices?</description>
+    </item>
+    
+  </channel>
+</rss>
