@@ -29,8 +29,12 @@ rm -rf public/*
 echo "Generating site"
 hugo
 
+echo "Synchronize root cname file"
+cp CNAME public/CNAME
+
 echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Publishing to gh-pages from sourceref: $sourceref"
 
-#echo "Pushing to github"
-#git push origin gh-pages
+echo "Pushing to github"
+git push origin gh-pages
+git push origin master
