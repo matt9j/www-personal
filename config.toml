@@ -56,7 +56,9 @@ disableLanguages        = [""]
     # Sets the navbarTitle that appears in the top left of the navigation bar
     navbarTitle         = "matt9j"
     # Sets navbarTitle to match the section of the website
-    dynamicTitles       = false
+    dynamicTitles       = true
+    # Prefix the dynamic title with the site title
+    prefixTitle         = true
     searchMenu          = false
     shareMenu           = false
     languageMenu        = true
