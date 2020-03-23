@@ -14,12 +14,7 @@
     padding-bottom: 1em;
 }
 
-.publication h1,
-.publication h2,
-.publication h3,
-.publication h4,
-.publication h5,
-.publication h6 {
+h1, h2, h3, h4, h5, h6 {
     text-transform: none;
     letter-spacing: 0em;
 }
@@ -28,7 +23,7 @@
     width: 100%;
 }
 
-.publication p, .publication div p {
+.post p, .post div p {
     text-align: left;
 }
 
@@ -37,15 +32,6 @@ h4 {
     margin-bottom: 0.1em;
 }
 
-.publication-list .title {
-    padding-top: 0em !important;
-    padding-bottom: 0em !important;
-}
-
-.publication-list {
-    padding-top: 0.1em !important;
-}
-
-.publication-list h2 {
+h2 {
     margin-top: 0em !important;
 }
