@@ -3,8 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://matt9j.net/tags/bread/</loc>
+    <lastmod>2020-07-18T14:31:22-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://matt9j.net/categories/</loc>
-    <lastmod>2020-01-29T12:31:12-08:00</lastmod>
+    <lastmod>2020-07-18T14:48:08-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -14,6 +19,71 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://matt9j.net/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/family/</loc>
+    <lastmod>2020-07-18T14:48:08-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/recipes/banana-bread/</loc>
+    <lastmod>2020-07-18T14:31:22-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/recipes/blueberry-pie/</loc>
+    <lastmod>2020-07-18T14:48:08-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/</loc>
+    <lastmod>2020-07-18T14:48:08-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://matt9j.net/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://matt9j.net/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/pie/</loc>
+    <lastmod>2020-07-18T14:48:08-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/recipe/</loc>
+    <lastmod>2020-07-18T14:48:08-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/recipes/</loc>
+    <lastmod>2020-07-18T14:48:08-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/categories/recipes/</loc>
+    <lastmod>2020-07-18T14:48:08-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/</loc>
+    <lastmod>2020-07-18T14:48:08-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://matt9j.net/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://matt9j.net/tags/"
                 />
   </url>
   
@@ -38,21 +108,6 @@
   </url>
   
   <url>
-    <loc>https://matt9j.net/</loc>
-    <lastmod>2020-01-29T13:59:40-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://matt9j.net/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://matt9j.net/"
-                />
-  </url>
-  
-  <url>
     <loc>https://matt9j.net/posts/</loc>
     <lastmod>2020-01-29T12:31:12-08:00</lastmod>
   </url>
@@ -60,21 +115,6 @@
   <url>
     <loc>https://matt9j.net/categories/software-development/</loc>
     <lastmod>2020-01-29T12:31:12-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://matt9j.net/tags/</loc>
-    <lastmod>2020-01-29T12:31:12-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://matt9j.net/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://matt9j.net/tags/"
-                />
   </url>
   
   <url>
