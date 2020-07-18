@@ -147,6 +147,13 @@ disableLanguages        = [""]
     weight            = 4
 
   [[menu.main]]
+    name              = "Recipes"
+    identifier        = "matt9j:recipes"
+    url               = "/recipes/"
+    pre               = "<i class='far fa-newspaper'></i>"
+    weight            = 4
+
+  [[menu.main]]
     name              = "Categories"
     identifier        = "matt9j:categories"
     url               = "/categories/"
