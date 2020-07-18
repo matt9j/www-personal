@@ -66,3 +66,6 @@ Streusel Topping Instructions
 * ½ cinnamon
 * ½ cup butter
 * Pecans
+
+---
+Licensed under [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)

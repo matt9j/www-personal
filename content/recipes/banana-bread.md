@@ -43,3 +43,7 @@ favorite chopped nuts!
 inserted into center of the loaf comes out clean.
 4. Let bread cool in pan for 10 minutes...
 5. And then turn out onto a wire rack to finish cooling on its own!
+
+
+---
+Licensed under [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)
