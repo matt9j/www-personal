@@ -37,4 +37,4 @@ cd public && git add --all && git commit -m "Publishing to gh-pages from sourcer
 
 echo "Pushing to github"
 git push origin gh-pages
-git push origin master
+git push origin main
