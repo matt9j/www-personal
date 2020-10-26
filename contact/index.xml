@@ -5,10 +5,6 @@
     <link>https://matt9j.net/contact/</link>
     <description>Recent content in Contact on matt9j:Matt Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://matt9j.net/contact/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://matt9j.net/contact/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

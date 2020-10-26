@@ -5,10 +5,6 @@
     <link>https://matt9j.net/es/tags/</link>
     <description>Recent content in Tags on matt9j | Matt Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es-mx</language>
-    
-	<atom:link href="https://matt9j.net/es/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>es-mx</language><atom:link href="https://matt9j.net/es/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
