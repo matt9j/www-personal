@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>personal on matt9j:Matt Johnson</title>
+    <link>https://matt9j.net/categories/personal/</link>
+    <description>Recent content in personal on matt9j:Matt Johnson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/categories/personal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Black Lives Matter</title>
+      <link>https://matt9j.net/posts/blm/</link>
+      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/posts/blm/</guid>
+      <description>The fight to end systemic racism, particularly against my Black neighbors in the United States (my home), continues beyond the summer of 2020, beyond the 2020 election, and beyond a blog post. The Internet is a vast place, but in this corner I hope to make this undeniably clear. The injustice served to Breonna Taylor and Ahmaud Arbery this spring, to the many hundreds killed, and to millions of Black folks marginalized through systemic denial of opportunity in a country they helped build, is shameful.</description>
+    </item>
+    
+  </channel>
+</rss>
