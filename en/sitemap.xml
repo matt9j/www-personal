@@ -3,13 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://matt9j.net/posts/blm/</loc>
-    <lastmod>2020-10-26T16:42:22-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://matt9j.net/categories/</loc>
-    <lastmod>2020-10-26T16:42:22-07:00</lastmod>
+    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -24,7 +19,7 @@
   
   <url>
     <loc>https://matt9j.net/</loc>
-    <lastmod>2020-10-26T16:42:22-07:00</lastmod>
+    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -35,6 +30,46 @@
                 hreflang="en"
                 href="https://matt9j.net/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/recipe/</loc>
+    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/recipes/</loc>
+    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/categories/recipes/</loc>
+    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/</loc>
+    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://matt9j.net/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://matt9j.net/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/recipes/hummus-no-tahini/</loc>
+    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/posts/blm/</loc>
+    <lastmod>2020-10-26T16:42:22-07:00</lastmod>
   </url>
   
   <url>
@@ -53,42 +88,12 @@
   </url>
   
   <url>
-    <loc>https://matt9j.net/tags/</loc>
-    <lastmod>2020-10-26T16:42:22-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://matt9j.net/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://matt9j.net/tags/"
-                />
-  </url>
-  
-  <url>
     <loc>https://matt9j.net/tags/dessert/</loc>
     <lastmod>2020-08-09T22:53:27-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://matt9j.net/recipes/lemon-bars/</loc>
-    <lastmod>2020-08-09T22:53:27-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://matt9j.net/tags/recipe/</loc>
-    <lastmod>2020-08-09T22:53:27-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://matt9j.net/recipes/</loc>
-    <lastmod>2020-08-09T22:53:27-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://matt9j.net/categories/recipes/</loc>
     <lastmod>2020-08-09T22:53:27-07:00</lastmod>
   </url>
   
