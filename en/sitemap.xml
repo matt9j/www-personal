@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://matt9j.net/categories/</loc>
-    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
+    <lastmod>2021-02-17T22:24:47-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -18,8 +18,13 @@
   </url>
   
   <url>
+    <loc>https://matt9j.net/tags/dinner/</loc>
+    <lastmod>2021-02-17T22:24:47-08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://matt9j.net/</loc>
-    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
+    <lastmod>2021-02-17T22:24:47-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -34,22 +39,32 @@
   
   <url>
     <loc>https://matt9j.net/tags/recipe/</loc>
-    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
+    <lastmod>2021-02-17T22:24:47-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://matt9j.net/recipes/</loc>
-    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
+    <lastmod>2021-02-17T22:24:47-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://matt9j.net/categories/recipes/</loc>
-    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
+    <lastmod>2021-02-17T22:24:47-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/recipes/pesto-lasagna/</loc>
+    <lastmod>2021-02-17T22:24:47-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/recipes/easy-black-bean-burgers/</loc>
+    <lastmod>2021-02-17T22:22:34-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://matt9j.net/tags/</loc>
-    <lastmod>2020-10-27T12:31:53-07:00</lastmod>
+    <lastmod>2021-02-17T22:24:47-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -60,6 +75,26 @@
                 hreflang="en"
                 href="https://matt9j.net/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/vegetarian/</loc>
+    <lastmod>2021-02-17T22:22:34-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/appetizer/</loc>
+    <lastmod>2021-02-17T22:23:36-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/recipes/black-bean-dip/</loc>
+    <lastmod>2021-02-17T22:23:36-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://matt9j.net/tags/dip/</loc>
+    <lastmod>2021-02-17T22:23:36-08:00</lastmod>
   </url>
   
   <url>
