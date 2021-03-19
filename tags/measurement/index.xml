@@ -9,10 +9,10 @@
     <lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/tags/measurement/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Whale Watching in Inland Indonesia: Analyzing a Small, Remote, Internet-Based Community Cellular Network</title>
-      <link>https://matt9j.net/publications/www2021/</link>
+      <link>https://matt9j.net/publications/www21/</link>
       <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://matt9j.net/publications/www2021/</guid>
+      <guid>https://matt9j.net/publications/www21/</guid>
       <description>abstract: While only generating a minuscule percentage of global traffic, largely lost in the noise of large-scale analyses, remote rural networks are the physical frontier of the Internet today. Through tight integration with a local operator’s infrastructure, we gather a unique dataset to characterize and report a year of interaction between finances, utilization, and performance of a novel, remote, data-only Community LTE Network in Bokondini, Indonesia. With visibility to drill down to individual users, we find use highly unbalanced and the network supported by only a handful of relatively heavy consumers.</description>
     </item>
     

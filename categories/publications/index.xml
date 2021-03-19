@@ -9,19 +9,19 @@
     <lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/categories/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Network Capacity as Common Pool Resource: Community-Based Congestion Management in a Community Network</title>
-      <link>https://matt9j.net/publications/cscw2021/</link>
+      <link>https://matt9j.net/publications/cscw21/</link>
       <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://matt9j.net/publications/cscw2021/</guid>
+      <guid>https://matt9j.net/publications/cscw21/</guid>
       <description>abstract: Congestion control mechanisms, by which network users share constrained capacity on Internet links, are heavily studied in computer science. Such mechanisms are traditionally automated, assuming that users do not wish to be involved in addressing congestion. However, in community-owned and operated networks, users have control over daily operational choices. We explore the design of community-based congestion policies and mechanisms, through the lens of network capacity as a Common Pool Resource (CPR).</description>
     </item>
     
     <item>
       <title>Whale Watching in Inland Indonesia: Analyzing a Small, Remote, Internet-Based Community Cellular Network</title>
-      <link>https://matt9j.net/publications/www2021/</link>
+      <link>https://matt9j.net/publications/www21/</link>
       <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://matt9j.net/publications/www2021/</guid>
+      <guid>https://matt9j.net/publications/www21/</guid>
       <description>abstract: While only generating a minuscule percentage of global traffic, largely lost in the noise of large-scale analyses, remote rural networks are the physical frontier of the Internet today. Through tight integration with a local operator’s infrastructure, we gather a unique dataset to characterize and report a year of interaction between finances, utilization, and performance of a novel, remote, data-only Community LTE Network in Bokondini, Indonesia. With visibility to drill down to individual users, we find use highly unbalanced and the network supported by only a handful of relatively heavy consumers.</description>
     </item>
     
