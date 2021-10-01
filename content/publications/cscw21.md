@@ -40,11 +40,12 @@ compatible with Ostrom's principles for CPR governance.
 
 Matthew William Johnson, Esther Han Beol Jang, Frankie O’Rourke, Rachel Ye, and Kurtis Heimerl. 2021.Network Capacity as Common Pool Resource: Community-Based Congestion Management in a CommunityNetwork.Proc. ACM Hum.-Comput. Interact.5, CSCW1, Article 61 (April 2021), 25 pages. https://doi.org/10.1145/3449135
 
-<!-- #### Official ACM Download:
+#### Official ACM Download:
 
-(Use this one) -->
+(Use this one)
+[https://dl.acm.org/doi/10.1145/3449135?cid=99659180407](https://dl.acm.org/doi/10.1145/3449135?cid=99659180407)
 
+#### Unofficial pre-print download:
 
-#### Personal site direct download:
-
+(Just in case)
 [2021-commgestion.pdf](/papers/2021-commgestion.pdf)

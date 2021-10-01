@@ -3,7 +3,7 @@ title: "Whale Watching in Inland Indonesia: Analyzing a Small, Remote, Internet-
 date: 2021-03-18
 draft: false
 type: "publication"
-description: "To Appear at WWW 2021"
+description: "Published at The Web Conference (WWW) 2021"
 tags: [
     "LTE",
     "Bandwidth",
@@ -44,11 +44,12 @@ Small, Remote, Internet-Based Community Cellular Network. In Proceedings
 of the Web Conference 2021 (WWW ’21), April 19–23, 2021, Ljubljana, Slovenia.
 ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3442381.3449996
 
-<!-- #### Official ACM Download:
+#### Official ACM Download:
 
-(Use this one) -->
+(Use this one)
+[https://dl.acm.org/doi/10.1145/3442381.3449996?cid=99659180407](https://dl.acm.org/doi/10.1145/3442381.3449996?cid=99659180407)
 
+#### Unofficial pre-print download:
 
-#### Personal site direct download:
-
+(Just in case)
 [2021-whale-watching.pdf](/papers/2021-whale-watching.pdf)
