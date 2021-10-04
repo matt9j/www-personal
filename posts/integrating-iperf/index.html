@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Integrating Asyncronous iperf3 Tests in Android 11&#43; - matt9j:Matt Johnson</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.88.1" /><meta itemprop="name" content="Integrating Asyncronous iperf3 Tests in Android 11&#43;">
+<meta itemprop="description" content="C&#43;&#43; also builds character"><meta itemprop="datePublished" content="2021-09-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-10-04T16:09:24-07:00" />
+<meta itemprop="wordCount" content="1802">
+<meta itemprop="keywords" content="android,seattle-community-network,networks,ICTD," /><meta property="og:title" content="Integrating Asyncronous iperf3 Tests in Android 11&#43;" />
+<meta property="og:description" content="C&#43;&#43; also builds character" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://matt9j.net/posts/integrating-iperf/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-10-04T16:09:24-07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Integrating Asyncronous iperf3 Tests in Android 11&#43;"/>
+<meta name="twitter:description" content="C&#43;&#43; also builds character"/>
+<meta name="twitter:site" content="@matt9j"/>
+<link rel="stylesheet" href="/css/bundle.min.e343e893f1b051e102213e210b10bf9a52bdde305e250fde56890e30cc285bf5.css" integrity="sha256-40Pok/GwUeECIT4hCxC/mlK93jBeJQ/eVokOMMwoW/U=">
+        <link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            matt9j:
+          
+          
+            posts
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        
+          
+          
+            <a href="/about/" class="link"><i class='fas fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/publications/" class="link"><i class='fas fa-book'></i> Publications</a>
+          
+        
+      
+        
+          
+          
+            <a href="/posts/" class="link"><i class='far fa-newspaper'></i> Blog Posts</a>
+          
+        
+      
+        
+          
+          
+            <a href="/recipes/" class="link"><i class='far fa-newspaper'></i> Recipes</a>
+          
+        
+      
+        
+          
+          
+            <a href="/categories/" class="link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+        
+          
+          
+            <a href="/contact/" class="link"><i class='fas fa-envelope'></i> Contact</a>
+          
+        
+      
+      
+      
+    </menu>
+    
+    
+    <a href="#lang-menu" class="lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="lang-menu" class="flyout-menu">
+  <a href="#" lang="en" class="link active">English (en)</a>
+  
+    
+      
+    
+      
+        <a href="/es" lang="es" class="no-lang link">Español (México) (es)</a>
+      
+    
+  
+</menu>
+
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" class="hidden-single-column">
+  <a href="/"><img src="/img/main/profile-picture.jpg" class="circle" width="50%" alt="matt9j logo" /></a>
+  <header>
+    <h1>matt9j</h1>
+  </header>
+  <main>
+    <p>A networking researcher interested in the challenges of infrastructure at the end of the tail of connectivity</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/matt9j" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/matt9j" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/matt9j" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+<li><a href="//scholar.google.com/citations?user=cTILBksAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+<li><a href="//orcid.org/0000-0003-2095-0225" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+
+<li><a href="//keybase.io/matt9j" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+
+
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/posts/integrating-iperf/">Integrating Asyncronous iperf3 Tests in Android 11&#43;</a></h2>
+    
+    
+      <p>C&#43;&#43; also builds character</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2021-09-30 00:00:00 &#43;0000 UTC">
+      September 30, 2021
+    </time>
+    <span class="author"></span>
+    
+      <p>9 minutes read</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+        <a href="mailto:?subject=Check out this post by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fmatt9j.net%2fposts%2fintegrating-iperf%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+
+  <div class="content">
+    <h2 id="preamble">Preamble</h2>
+<p>I&rsquo;ve been helping out the <a href="https://seattlecommunitynetwork.org">Seattle Community
+Network</a> (SCN), with an ongoing project to
+build a crowdsourced network performance measurement application for Android.
+While understanding modern network performance, particularly wireless networks,
+is <em>extremely</em> subtle, &ldquo;speedtests&rdquo; offer a crude yet popular way to measure a
+network&rsquo;s performance, and are easy for general audiences to interpret.</p>
+<p>Unsurprisingly, SCN sought to include a &ldquo;speedtest&rdquo; capability in their app! A
+team of volunteer undergraduate researchers (<a href="https://johnnzhou.github.io/">Zhennan(John)
+Zhou</a> &amp; <a href="https://www.linkedin.com/in/ashwin-chintalapati-a54936222/">Ashwin
+Chintalapati</a>)
+organized by <a href="https://infrared-ether.medium.com/">Esther Jang</a> got started on
+the project, and started integrating <a href="https://github.com/esnet/iperf">iperf3</a>
+(C, <a href="https://github.com/esnet/iperf/blob/master/LICENSE">BSD-3</a> into the
+application. Due to its maturity, consistent history of open source activity,
+and explicit offer of &ldquo;a library version of the functionality that can be used
+in other programs,&rdquo; I thought it was a reasonable choice. After a couple of
+weeks their efforts stalled though, and I was asked for some input.</p>
+<p>This marked the beginning of the journey&hellip;</p>
+<p>For part one, see my prior post <a href="/posts/building-iperf/">Building iperf3 For Android 11+</a></p>
+<h2 id="integrating-iperf3-with-an-android-application">Integrating iperf3 with an Android Application</h2>
+<p>Once we had a stable way to build libiperf, it was time to actually integrate
+its functionality into our application to provide the &ldquo;speedtest&rdquo; capability.
+Since the test would run for 10s of seconds, we needed it to operate
+asynchronously and not block the main UI thread. The team also wanted the test
+to be able to complete if the user switches away from the application while the
+test is running. Android has a <a href="https://developer.android.com/guide/background">great flowchart in their developer
+documentation</a> for deciding
+where and how to run tasks in modern Android. Since the test needed to be
+decoupled from the main application context (to allow switching), the team
+selected AndroidX&rsquo;s <code>WorkManager</code>
+(<a href="https://developer.android.com/topic/libraries/architecture/workmanager">Overview</a>
+<a href="https://developer.android.com/reference/androidx/work/WorkManager">Ref</a>).</p>
+<p>At a high-level, <code>WorkManager</code> allows the application to schedule work requests
+for either one-time work or periodic work. It has some cool capabilities to put
+constraints on when tasks run (like requiring a WiFi connection, when not on
+battery, when the device is idle, etc.), and an entire process for managing work
+windows for periodic maintenance tasks. Fortunately our task is relatively
+straightforward: we want to immediately run a test in response to user input,
+allow users to chancel running tests if they start one by mistake, and get the
+results of the test upon completion.</p>
+<p>The <code>Worker</code> class
+(<a href="https://developer.android.com/reference/androidx/work/Worker">Ref</a>) provides a
+synchronous interface for running work in its <code>doWork()</code> method and can be
+enqueued in the <code>WorkManager</code> to execute immediately. Since libiperf is a C
+library, we call a native C function across the Java Native Interface which
+initializes the iperf test c-struct with the intended test parameters and starts
+the test. All of this works well enough, and allows us to run a single iperf
+test to completion. At this point things start to get a bit more interesting&hellip;</p>
+<h2 id="stopping-iperf3-tests">Stopping iperf3 tests</h2>
+<p>It was an important feature that in-progress tests could be cancelled in case a
+heavyweight test was started accidentally! The WorkManager provides a
+<a href="https://developer.android.com/topic/libraries/architecture/workmanager/how-to/managing-work#cancelling">straightforward
+API</a>
+to cancel enqueued or in-progress work. The <code>Worker</code> class presents a
+synchronous interface though&ndash; how does the stop signal get to the worker? It
+turns out there are two ways, either by providing an override for the
+<code>onStopped()</code> callback, or by polling the <code>isStopped()</code> property in the main
+<code>doWork()</code> method. Since our <code>doWork()</code> method just indirectly wraps the
+underlying libiperf <code>run_client()</code> function, which is also synchronous and
+blocks on an underlying select(), there would not be an easy way to regularly
+poll <code>isStopped()</code> during the test without extensively modifying libiperf.</p>
+<p>Examining the source code for the <a href="https://github.com/esnet/iperf/blob/master/src/main.c">main iperf3 command line
+program</a>, which is
+implemented with libiperf and supports cancellation, we saw that they handle
+test cancellation by intercepting SIGINT, SIGTERM, and SIGHUP and calling
+<code>iperf_got_sigend()</code> from the libiperf api whenever one of the signals is
+received. This looked promising and easy to integrate with the <code>isStopped()</code>
+worker callback! So we connected the callbacks, started a test, pressed the
+cancel button, and&hellip;</p>
+<p>watched our app crash.</p>
+<p>Well not exactly crash, just, close? Digging into the implementation of
+<code>iperf_got_sigend()</code> quickly reveals a surprising twist for an embeddable api&hellip;
+a call to <code>exit()</code>!</p>
+<h3 id="process-assumptions-in-the-libiperf-api">Process assumptions in the libiperf API</h3>
+<p>It turns out that the iperf API wasn&rsquo;t quite as embeddable as we had originally
+hoped, and really was designed for implementing iperf-like command line
+programs instead of providing iperf as a part of a larger application. In
+Android the entire application is kept within the same process, including our
+background workers and the foreground UI. Calling exit doesn&rsquo;t just stop the
+background worker, but terminates the entire process/application! We wouldn&rsquo;t be
+able to stop our test the same way, and would have to figure out something else.</p>
+<h3 id="manually-setting-the-done-flag">Manually setting the done flag</h3>
+<p>Deep into the libiperf source at this point, we noticed a boolean <code>done</code> flag
+being checked in the client loop, but no high-level api to set it outside
+<code>iperf_got_sigend()</code>. Setting it to true appeared to cause the client to break
+out of its main run loop and return, exactly the behavior we wanted! Setting it
+directly required extending the libiperf API, and we&rsquo;re planning to upstream
+these changes for future integrators.</p>
+<p>But there is no magic&ndash; since the <code>done</code> flag is only checked at each iteration
+of the run loop, we still have to work around the blocking select at its heart.
+For uplink tests the loop runs with every transmitted packet, providing plenty
+of responsiveness. In downlink though the loop only runs when a packet is
+<em>received</em>, which could stall if there is a problem in the network. Fortunately
+the iperf authors anticipated this problem, and provide a fallback timeout!</p>
+<p>Unfortunately, this timeout defaults to (a very conservative) two minutes : /</p>
+<p>Configuring the timeout was also not exposed in the high-level API yet, but we
+were able to add an extension easily along with our earlier efforts. We chose a
+value of 5 seconds, which should be long enough for the types of connections we
+hope to measure, but still responsive enough for acceptable UX.</p>
+<p>This approach of polling the done flag is eerily similar to just checking
+<code>is_stopped()</code> (the high-level Java function provided by Worker), but has the
+advantage of not needing to make a heavyweight JNI call for each received packet
+during the test, and not needing to add JNI code directly into libiperf.
+Unfortunately though, this approach now requres us to now reason about threading
+and concurrent access to a value in C/C++, something that is not needed in
+the regular single-threaded with signals iperf client!</p>
+<h3 id="setting-done-from-a-different-thread">Setting done from a different thread</h3>
+<p>The done flag in particular is polled from the main worker thread, which blocks
+on <code>select()</code>, but will need to be set from a different worker thread provided
+by the app&rsquo;s WorkManager running <code>onStopped()</code>. To make matters even more
+complicated, done is part of the internal to libiperf iperf_test struct, which
+is allocated at the beginning of the test and freed at the end of the test. We
+need to protect access to the memory in this struct to ensure it is still valid
+when accessing it from <code>onStopped()</code>.</p>
+<p>Since we only run one test at a time (by design, to prevent the tests from
+interfering), it is relatively straightforward to make a singleton holding a
+pointer to the current test and a mutex protecting access to the test struct. If
+multiple concurrent tests were needed this approach could be extended to
+implenting a store of the currently running tests, with some kind of ID system
+to get access to the correct test instance.</p>
+<p>Tracking the test instance across threads with a singleton test manager is not
+particularly elegent or optimized for maximum performance, but is robust,
+performant enough, and safe.</p>
+<p>So we finally have it all. A means to run iperf tests in the background of our
+application, and a means to stop them on demand from the foreground UI. In
+testing I start some tests, and stop some tests, and start a test, and then&hellip;
+nothing happens. The UI is responsive, but no traffic is being generated for the
+latest tests.</p>
+<h3 id="learning-to-better-understand-the-worker-contract">Learning to better understand the Worker contract</h3>
+<p>It turns out that this is where things get even more complicated. After adding
+extensive debug logging and an hour or so of narrowing down on where things get
+hung up, it becomes apparent that the mutex protecting the singleton test
+manager is locked, preventing new tests from starting without a full restart of
+the app. But being modern C++ programmers we were using <code>std::lock_guard</code>, an
+<a href="https://en.wikipedia.org/wiki/Resource_acquisition_is_initialization">RAII</a>-based
+wrapper for scoped mutex ownership. This should be impossible!</p>
+<p>After much head scratching and many dead ends, we generate a new hypothesis:
+what if the worker thread is somehow &ldquo;killed&rdquo; uncleanly, leaving the process
+memory in an invalid state? We add more debug telmetry building an RAII function
+entry/exit logger to validate our assumptions and verify that both the main
+worker thread and stop signal thread are returning correctly. After around a
+dozen tests, it becomes clear that our logging in the cleanup of the JNI
+function consistently appears, but the logs at the end of the main function do
+not!</p>
+<p>At this point, being neither an expert in Java nor Android&rsquo;s latest Java
+runtime, it&rsquo;s extremely counter-intuitive to me why background worker threads
+would be killed &ldquo;mid-function&rdquo; while the parent process (the application)
+remains running. On a hunch, and reading between the lines of the <code>onStopped()</code>
+method documentation, we add a
+<a href="https://developer.android.com/reference/java/util/concurrent/CountDownLatch">CountDownLatch</a>
+to our Worker implementation to count down when the native run_test function has
+completed, and hold our <code>onStopped()</code> implementation from returning until the
+latch is triggered. Lo and behold, our main function exit logging now
+consistently appears, and the mutex returns to expected operation.</p>
+<p>The <a href="https://developer.android.com/topic/libraries/architecture/workmanager/how-to/managing-work#onstopped_callback">documentation for onStopped() in the managing work
+guide</a>
+says:</p>
+<blockquote>
+<p>WorkManager invokes ListenableWorker.onStopped() as soon as your Worker has
+been stopped. Override this method to close any resources you may be holding
+onto.</p>
+</blockquote>
+<p>It may be an implementation detail, or a quirk of the interaction between the
+JNI and WorkManager, but should be something to be aware of if you find yourself
+using RAII principles to manage long-lived native state in a JNI function. At
+the point onStopped() returns it seems <em>all</em> resources must be released,
+including resources managed with RAII in your main thread!</p>
+<h2 id="epilogue-gracefully-handling-errors">Epilogue: gracefully handling errors</h2>
+<p>After all this, we finally were able to complete our integration of the iperf
+tool into our high-level Android testing app. We did encounter one more issue,
+which was libiperf 3.10.1 handling test errors (like an unreachable server or
+timeout) with and internal call to <code>exit()</code> rather than returning an error code
+from the <code>run_client()</code> function! This appears to have been accidental, and was
+<a href="https://github.com/esnet/iperf/pull/1202">concurrently fixed</a> by <a href="https://github.com/ludeeus">Joakim
+Sørensen</a>.</p>
+<p>Hopefully as more folks use libiperf externally we can continue to improve the
+stability and test coverage of this valuable open-source resource!</p>
+
+  </div>
+  <footer>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/categories/software-development">software-development</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/categories/cellular">cellular</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    
+    
+      <li class="tags">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/android">android</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/seattle-community-network">seattle-community-network</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/networks">networks</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/ictd">ICTD</a></li>
+          
+        </ul>
+      </li>
+    
+  
+</ul>
+
+  </footer>
+</article>
+
+
+<div class="pagination">
+  
+    <a href="/posts/building-iperf/" class="button"><div class="previous"><div>Building iperf3 For Android 11&#43;</div></div></a>
+  
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/posts/integrating-iperf/">Integrating Asyncronous iperf3 Tests in Android 11&#43;</a></h1>
+          <time class="published" datetime="">September 30, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/posts/building-iperf/">Building iperf3 For Android 11&#43;</a></h1>
+          <time class="published" datetime="">September 17, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/posts/rethinking-congestion/">Rethinking network congestion (Especially in community networks)</a></h1>
+          <time class="published" datetime="">January 27, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/posts/blm/">Black Lives Matter</a></h1>
+          <time class="published" datetime="">September 25, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/posts/hello-world/">Hello World</a></h1>
+          <time class="published" datetime="">January 29, 2020</time>
+        </header>
+      </article>
+      
+      
+        <a href="/posts/" class="button">See more</a>
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/publications/">publications<span class="count">8</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/recipes/">recipes<span class="count">8</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/cellular/">cellular<span class="count">5</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/software-development/">software-development<span class="count">3</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/personal/">personal<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>Currently a grad student at the University of Washington in the ICTD Lab...</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/matt9j" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/matt9j" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/matt9j" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+<li><a href="//scholar.google.com/citations?user=cTILBksAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+<li><a href="//orcid.org/0000-0003-2095-0225" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+
+<li><a href="//keybase.io/matt9j" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+
+
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2021
+      
+        matt9j:Matt Johnson
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.88.1' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/bundle.min.87ac6c6c289e975bd6bceeaae259519b76127189022e0c32bc07bd359c0d083a.js" integrity="sha256-h6xsbCiel1vWvO6q4llRm3YScYkCLgwyvAe9NZwNCDo="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>

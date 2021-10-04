@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>Building iperf3 For Android 11&#43; - matt9j:Matt Johnson</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.88.1" /><meta itemprop="name" content="Building iperf3 For Android 11&#43;">
+<meta itemprop="description" content="Integration builds character"><meta itemprop="datePublished" content="2021-09-17T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-10-04T16:09:24-07:00" />
+<meta itemprop="wordCount" content="1103">
+<meta itemprop="keywords" content="android,seattle-community-network,networks,ICTD," /><meta property="og:title" content="Building iperf3 For Android 11&#43;" />
+<meta property="og:description" content="Integration builds character" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://matt9j.net/posts/building-iperf/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-17T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-10-04T16:09:24-07:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Building iperf3 For Android 11&#43;"/>
+<meta name="twitter:description" content="Integration builds character"/>
+<meta name="twitter:site" content="@matt9j"/>
+<link rel="stylesheet" href="/css/bundle.min.e343e893f1b051e102213e210b10bf9a52bdde305e250fde56890e30cc285bf5.css" integrity="sha256-40Pok/GwUeECIT4hCxC/mlK93jBeJQ/eVokOMMwoW/U=">
+        <link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/">
+        
+          
+            matt9j:
+          
+          
+            posts
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu">
+      
+        
+          
+          
+            <a href="/about/" class="link"><i class='fas fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/publications/" class="link"><i class='fas fa-book'></i> Publications</a>
+          
+        
+      
+        
+          
+          
+            <a href="/posts/" class="link"><i class='far fa-newspaper'></i> Blog Posts</a>
+          
+        
+      
+        
+          
+          
+            <a href="/recipes/" class="link"><i class='far fa-newspaper'></i> Recipes</a>
+          
+        
+      
+        
+          
+          
+            <a href="/categories/" class="link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+        
+          
+          
+            <a href="/contact/" class="link"><i class='fas fa-envelope'></i> Contact</a>
+          
+        
+      
+      
+      
+    </menu>
+    
+    
+    <a href="#lang-menu" class="lang-toggle" lang="en">en</a>
+    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="lang-menu" class="flyout-menu">
+  <a href="#" lang="en" class="link active">English (en)</a>
+  
+    
+      
+    
+      
+        <a href="/es" lang="es" class="no-lang link">Español (México) (es)</a>
+      
+    
+  
+</menu>
+
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" class="hidden-single-column">
+  <a href="/"><img src="/img/main/profile-picture.jpg" class="circle" width="50%" alt="matt9j logo" /></a>
+  <header>
+    <h1>matt9j</h1>
+  </header>
+  <main>
+    <p>A networking researcher interested in the challenges of infrastructure at the end of the tail of connectivity</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/matt9j" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/matt9j" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/matt9j" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+<li><a href="//scholar.google.com/citations?user=cTILBksAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+<li><a href="//orcid.org/0000-0003-2095-0225" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+
+<li><a href="//keybase.io/matt9j" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+
+
+
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/posts/building-iperf/">Building iperf3 For Android 11&#43;</a></h2>
+    
+    
+      <p>Integration builds character</p>
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2021-09-17 00:00:00 &#43;0000 UTC">
+      September 17, 2021
+    </time>
+    <span class="author"></span>
+    
+      <p>6 minutes read</p>
+    
+  </div>
+</header>
+
+  <section id="socnet-share">
+    
+
+
+
+
+  
+        <a href="mailto:?subject=Check out this post by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fmatt9j.net%2fposts%2fbuilding-iperf%2f" target="_blank" class="share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+  </section>
+  
+
+  <div class="content">
+    <h2 id="preamble">Preamble</h2>
+<p>I&rsquo;ve been helping out the <a href="https://seattlecommunitynetwork.org">Seattle Community
+Network</a> (SCN), with an ongoing project to
+build a crowdsourced network performance measurement application for Android.
+While understanding modern network performance, particularly wireless networks,
+is <em>extremely</em> subtle, &ldquo;speedtests&rdquo; offer a crude yet popular way to measure a
+network&rsquo;s performance, and are easy for general audiences to interpret.</p>
+<p>Unsurprisingly, SCN sought to include a &ldquo;speedtest&rdquo; capability in their app! A
+team of volunteer undergraduate researchers (<a href="https://johnnzhou.github.io/">Zhennan(John)
+Zhou</a> &amp; <a href="https://www.linkedin.com/in/ashwin-chintalapati-a54936222/">Ashwin
+Chintalapati</a>)
+organized by <a href="https://infrared-ether.medium.com/">Esther Jang</a> got started on
+the project, and started integrating <a href="https://github.com/esnet/iperf">iperf3</a>
+(C, <a href="https://github.com/esnet/iperf/blob/master/LICENSE">BSD-3</a> into the
+application. Due to its maturity, consistent history of open source activity,
+and explicit offer of &ldquo;a library version of the functionality that can be used
+in other programs,&rdquo; I thought it was a reasonable choice. After a couple of
+weeks their efforts stalled though, and I was asked for some input.</p>
+<p>This marked the beginning of the journey&hellip;</p>
+<h2 id="building-in-android-studio">Building in Android Studio</h2>
+<p>Since libiperf is a c library, we sought to use the Android <a href="https://developer.android.com/ndk">Native Development
+Kit (NDK)</a> to re-use the existing code and
+integrate it directly with our android application. Under the hood the NDK
+relies on the Java Native Interface (JNI) to define the interface between the
+application code running in the JVM and c/c++ functions.
+<a href="https://johnnzhou.github.io/">John</a> wrote a set of wrappers to expose the
+relevant functions to the main application via the JNI, and an ndk-build script
+to build the wrappers and link in a pre-built libiperf. This approach worked,
+but had the unfortunate downside of making it very diffcult to work with
+libiperf from within Android studio, and reduced our visibility into the
+behavior of libiperf when we were trying to debug its interaction with the main
+application. The version of libiperf that worked with the external build was
+very old (3.1.3 vs. the latest 3.10.1 release), we had to re-build libiperf
+manually each time we made changes, and didn&rsquo;t have an easy way to use android
+logging from within the libiperf code.</p>
+<p>Given these shortcomings, I took up the challenge of getting the latest libiperf
+to work natively with Android Studio&rsquo;s NDK tooling to build libiperf from source
+as a part of the overall application build. While at the time of this post both
+ndk-build and CMake are supported by Android Studio, most of the official
+tutorials and help documentation are targeted towards the CMake approach, and
+the <a href="https://developer.android.com/ndk/guides">NDK guide</a> encourages projects to
+choose CMake over ndk-build.</p>
+<blockquote>
+<p>Android Studio&rsquo;s default build tool to compile native libraries is CMake.
+Android Studio also supports ndk-build due to the large number of existing
+projects that use the build toolkit. However, if you are creating a new native
+library, you should use CMake.</p>
+</blockquote>
+<p>Since I was going to make major changes to the build anyway, CMake seemed like
+the way to go. Iperf 3 uses autotools for its build, and after much trial and
+error, CMake documentation consulation, Google searching, soul searching, and
+only a few tears, I was able to adapt SciVision&rsquo;s <a href="https://www.scivision.dev/cmake-external-project-autotools/">autotools as CMake
+ExternalProject
+example</a> to build
+iperf3 from CMake via its own build tooling. By using CMake&rsquo;s ExternalProject
+capabilities, we can avoid re-creating the whole existing autotools build in
+CMake, and make it easy to upgrade the underlying iperf version to keep up with
+upstream releases.</p>
+<p>Importantly though, we&rsquo;re not just building iperf3 via CMake, we&rsquo;re building
+iperf3 via CMake <em>for Android</em>, and this means cross compilation is needed. I
+found a <a href="https://medium.com/@ansorod/how-to-compile-iperf3-for-android-4d67c9a7f061">helpful blog
+post</a>
+from 2020 by <a href="https://medium.com/@ansorod">Anderson Rodrigues</a>. In his post,
+Rodrigues walks us readers through creating a standalone Android toolchain
+(fortunately no longer needed since NDKr19), and then running the autotools
+<code>./configure</code> step with the correct environment variables for the
+cross-compilation toolchain. While this gets us to a correctly compiled library,
+it still doesn&rsquo;t get us to full integration with Android studio.</p>
+<p>Building from Rodrigues' approach and consulting the <a href="https://developer.android.com/ndk/guides/other_build_systems">latest environment
+variables for autoconf from the Android developer
+docs</a>, I created
+the following CMakeLists.txt to translate from the build metadata passed to
+CMake 3.18.1 (installed via SDK Tools Manager) from Gradle 7.0.2 in Android
+Studio to the correct configuration environment variables for autotools.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CMake" data-lang="CMake"><span style="color:#75715e"># Sets the minimum version of CMake required to build the native library.
+</span><span style="color:#75715e"></span>cmake_minimum_required(<span style="color:#e6db74">VERSION</span> <span style="color:#e6db74">3.16.3</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>set(<span style="color:#e6db74">IPERF_DIRECTORY_NAME</span>
+    <span style="color:#e6db74">iperf-3.10.1</span>
+    )<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Generate toolchain paths manually according to https://developer.android.com/ndk/guides/other_build_systems.
+</span><span style="color:#75715e"># This may need to be updated if the NDK changes
+</span><span style="color:#75715e"></span>string(<span style="color:#e6db74">TOLOWER</span> <span style="color:#e6db74">&#34;${CMAKE_HOST_SYSTEM_NAME}-${CMAKE_HOST_SYSTEM_PROCESSOR}&#34;</span> <span style="color:#e6db74">AUTOTOOLS_EXT_BUILD_ARCH</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>message(<span style="color:#e6db74">STATUS</span> <span style="color:#e6db74">&#34;Toolchain build architecture: ${AUTOTOOLS_EXT_BUILD_ARCH}&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>SET(<span style="color:#e6db74">AUTOTOOLS_EXT_TOOLCHAIN</span> <span style="color:#e6db74">&#34;${CMAKE_ANDROID_NDK}/toolchains/llvm/prebuilt/${AUTOTOOLS_EXT_BUILD_ARCH}&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>if(<span style="color:#f92672">${</span>CMAKE_ANDROID_ARCH<span style="color:#f92672">}</span> <span style="color:#e6db74">MATCHES</span> <span style="color:#e6db74">&#34;^arm$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    SET(<span style="color:#e6db74">AUTOTOOLS_EXT_TARGET</span> <span style="color:#e6db74">&#34;armv7a-linux-androideabi&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>elseif(<span style="color:#f92672">${</span>CMAKE_ANDROID_ARCH<span style="color:#f92672">}</span> <span style="color:#e6db74">MATCHES</span> <span style="color:#e6db74">&#34;^arm64$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    SET(<span style="color:#e6db74">AUTOTOOLS_EXT_TARGET</span> <span style="color:#e6db74">&#34;aarch64-linux-android&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>elseif(<span style="color:#f92672">${</span>CMAKE_ANDROID_ARCH<span style="color:#f92672">}</span> <span style="color:#e6db74">MATCHES</span> <span style="color:#e6db74">&#34;^x86$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    SET(<span style="color:#e6db74">AUTOTOOLS_EXT_TARGET</span> <span style="color:#e6db74">&#34;i686-linux-android&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>elseif(<span style="color:#f92672">${</span>CMAKE_ANDROID_ARCH<span style="color:#f92672">}</span> <span style="color:#e6db74">MATCHES</span> <span style="color:#e6db74">&#34;^x86_64$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    SET(<span style="color:#e6db74">AUTOTOOLS_EXT_TARGET</span> <span style="color:#e6db74">&#34;x86_64-linux-android&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>else()<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">FATAL_ERROR</span> <span style="color:#e6db74">&#34;No target string defined for arch: ${CMAKE_ANDROID_ARCH}&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>endif()<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>SET(<span style="color:#e6db74">AUTOTOOLS_EXT_ABI</span> <span style="color:#e6db74">&#34;24&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>if(<span style="color:#e6db74">NOT</span> <span style="color:#f92672">${</span>CMAKE_C_COMPILER_TARGET<span style="color:#f92672">}</span> <span style="color:#e6db74">MATCHES</span> <span style="color:#e6db74">&#34;android.*${AUTOTOOLS_EXT_ABI}$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">ERROR</span> <span style="color:#e6db74">&#34;The CMake ABI version does not match the version set by gradle&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">ERROR</span> <span style="color:#e6db74">&#34;Update the AUTOTOOLS_EXT_ABI version to match&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">FATAL_ERROR</span> <span style="color:#e6db74">&#34;ABI ${AUTOTOOLS_EXT_ABI} does not match target ${CMAKE_C_COMPILER_TARGET}&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>endif()<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Link libiperf statically but with position independent code support to be embedded in a higher level dynamic library
+</span><span style="color:#75715e"></span>SET(<span style="color:#e6db74">AUTOMAKE_EXT_CXX_FLAGS</span> <span style="color:#e6db74">&#34;${CMAKE_CXX_FLAGS} -static -fPIC&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>SET(<span style="color:#e6db74">AUTOMAKE_EXT_C_FLAGS</span> <span style="color:#e6db74">&#34;${CMAKE_C_FLAGS} -static -fPIC&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>include(<span style="color:#e6db74">ExternalProject</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>ExternalProject_Add(
+        <span style="color:#e6db74">iperf_autotools</span>
+        <span style="color:#e6db74">SOURCE_DIR</span> <span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span>
+        <span style="color:#e6db74">CONFIGURE_COMMAND</span> <span style="color:#f92672">${</span>CMAKE_CURRENT_SOURCE_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span><span style="color:#e6db74">/configure</span> <span style="color:#e6db74">--host</span> <span style="color:#f92672">${</span>AUTOTOOLS_EXT_TARGET<span style="color:#f92672">}</span> <span style="color:#e6db74">AR=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/llvm-ar</span> <span style="color:#e6db74">CC=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TARGET<span style="color:#f92672">}${</span>AUTOTOOLS_EXT_ABI<span style="color:#f92672">}</span><span style="color:#e6db74">-clang</span> <span style="color:#e6db74">AS=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TARGET<span style="color:#f92672">}${</span>AUTOTOOLS_EXT_ABI<span style="color:#f92672">}</span><span style="color:#e6db74">-clang</span> <span style="color:#e6db74">CXX=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TARGET<span style="color:#f92672">}${</span>AUTOTOOLS_EXT_ABI<span style="color:#f92672">}</span><span style="color:#e6db74">-clang++</span> <span style="color:#e6db74">LD=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/ld</span> <span style="color:#e6db74">RANLIB=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/llvm-ranlib</span> <span style="color:#e6db74">STRIP=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/llvm-strip</span> <span style="color:#e6db74">CFLAGS=</span><span style="color:#f92672">${</span>AUTOMAKE_EXT_C_FLAGS<span style="color:#f92672">}</span> <span style="color:#e6db74">CXXFLAGS=</span><span style="color:#f92672">${</span>AUTOMAKE_EXT_CXX_FLAGS<span style="color:#f92672">}</span> <span style="color:#e6db74">--without-openssl</span> <span style="color:#e6db74">--prefix=</span><span style="color:#f92672">${</span>CMAKE_CURRENT_BINARY_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span>
+        <span style="color:#e6db74">PREFIX</span> <span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span>
+        <span style="color:#e6db74">BUILD_COMMAND</span> <span style="color:#e6db74">make</span>
+        <span style="color:#e6db74">BUILD_IN_SOURCE</span> <span style="color:#e6db74">1</span>
+        <span style="color:#e6db74">BUILD_BYPRODUCTS</span> <span style="color:#f92672">${</span>CMAKE_CURRENT_BINARY_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span><span style="color:#e6db74">/lib/libiperf.a</span>
+)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Create a CMake &#34;imported&#34; &#34;interface&#34; library representing the outputs from the autotools process.
+</span><span style="color:#75715e"></span>add_library(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">INTERFACE</span> <span style="color:#e6db74">IMPORTED</span> <span style="color:#e6db74">GLOBAL</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Let CMake know these directories can be created since they are referred below-- they would have
+</span><span style="color:#75715e"># been eventually created by automake
+</span><span style="color:#75715e"></span>file (<span style="color:#e6db74">MAKE_DIRECTORY</span> <span style="color:#e6db74">&#34;${CMAKE_CURRENT_BINARY_DIR}/${IPERF_DIRECTORY_NAME}/lib&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>file (<span style="color:#e6db74">MAKE_DIRECTORY</span> <span style="color:#e6db74">&#34;${CMAKE_CURRENT_BINARY_DIR}/${IPERF_DIRECTORY_NAME}/include&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Pass the headers and libraries created by automake to dependent targets for linking and/or inclusion.
+</span><span style="color:#75715e"></span>target_include_directories(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">INTERFACE</span> <span style="color:#f92672">${</span>CMAKE_CURRENT_BINARY_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span><span style="color:#e6db74">/include</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>target_link_libraries(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">INTERFACE</span> <span style="color:#e6db74">&#34;${CMAKE_CURRENT_BINARY_DIR}/${IPERF_DIRECTORY_NAME}/lib/libiperf.a&#34;</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Make sure the iperf interface library target triggers the autotools build.
+</span><span style="color:#75715e"></span>add_dependencies(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">iperf_autotools</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Add extra includes based on the current structure of the wrapper codebase.
+</span><span style="color:#75715e"># This somewhat breaks the API encapsulation.
+</span><span style="color:#75715e"># TODO(matt9j) Should ultimately not be needed if the API interface were used cleanly
+</span><span style="color:#75715e"></span>target_include_directories(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">INTERFACE</span> <span style="color:#f92672">${</span>CMAKE_CURRENT_SOURCE_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span><span style="color:#e6db74">/src</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>target_include_directories(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">INTERFACE</span> <span style="color:#f92672">${</span>CMAKE_CURRENT_BINARY_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span><span style="color:#e6db74">/src</span>)<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>This current implementation has the downside of specifying the Android ABI
+manually, but I&rsquo;m hoping it will become obsolete as the Android NDK support
+built into CMake improves with CMake 3.21. For now though this has allowed us to
+build the library on demand for all platforms supported by Android Studio,
+including both debug and release versions with symbols to allow integrated
+debugging in Android Studio! Hopefully it can be useful to you as well, and can
+save you the few days I spent learning to untangle the Android native build
+process!</p>
+<h2 id="hindsight">Hindsight</h2>
+<p>Looking back on this work and the integration struggles we overcame (to be
+detailed in a future post), I&rsquo;m quite intrigued by the easy crossplatform builds
+promised by Golang, and am curious if <a href="https://github.com/microsoft/ethr">ethr</a>
+(Golang, MIT) might have been the better choice. If anyone has experience
+integrating ethr into a high-level application I would love to hear how it went!</p>
+
+  </div>
+  <footer>
+    <ul class="stats">
+  
+    
+    
+      <li class="categories">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/categories/software-development">software-development</a></li>
+          
+        </ul>
+      </li>
+    
+  
+  
+    
+    
+      <li class="tags">
+        <ul>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/android">android</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/seattle-community-network">seattle-community-network</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/networks">networks</a></li>
+          
+            
+            <li><a class="article-category-link" href="https://matt9j.net/tags/ictd">ICTD</a></li>
+          
+        </ul>
+      </li>
+    
+  
+</ul>
+
+  </footer>
+</article>
+
+
+<div class="pagination">
+  
+    <a href="/posts/rethinking-congestion/" class="button"><div class="previous"><div>Rethinking network congestion (Especially in community networks)</div></div></a>
+  
+  
+    <a href="/posts/integrating-iperf/" class="button"><div class="next"><div>Integrating Asyncronous iperf3 Tests in Android 11&#43;</div></div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/posts/integrating-iperf/">Integrating Asyncronous iperf3 Tests in Android 11&#43;</a></h1>
+          <time class="published" datetime="">September 30, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/posts/building-iperf/">Building iperf3 For Android 11&#43;</a></h1>
+          <time class="published" datetime="">September 17, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/posts/rethinking-congestion/">Rethinking network congestion (Especially in community networks)</a></h1>
+          <time class="published" datetime="">January 27, 2021</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/posts/blm/">Black Lives Matter</a></h1>
+          <time class="published" datetime="">September 25, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h1><a href="/posts/hello-world/">Hello World</a></h1>
+          <time class="published" datetime="">January 29, 2020</time>
+        </header>
+      </article>
+      
+      
+        <a href="/posts/" class="button">See more</a>
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/publications/">publications<span class="count">8</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/recipes/">recipes<span class="count">8</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/cellular/">cellular<span class="count">5</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/software-development/">software-development<span class="count">3</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/personal/">personal<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>Currently a grad student at the University of Washington in the ICTD Lab...</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/matt9j" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/matt9j" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//twitter.com/matt9j" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+
+
+<li><a href="//scholar.google.com/citations?user=cTILBksAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
+<li><a href="//orcid.org/0000-0003-2095-0225" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
+
+<li><a href="//keybase.io/matt9j" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+
+
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2021
+      
+        matt9j:Matt Johnson
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.88.1' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/bundle.min.87ac6c6c289e975bd6bceeaae259519b76127189022e0c32bc07bd359c0d083a.js" integrity="sha256-h6xsbCiel1vWvO6q4llRm3YScYkCLgwyvAe9NZwNCDo="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>
