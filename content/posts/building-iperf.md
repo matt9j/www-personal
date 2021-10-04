@@ -26,10 +26,11 @@ network's performance, and are easy for general audiences to interpret.
 
 Unsurprisingly, SCN sought to include a "speedtest" capability in their app! A
 team of volunteer undergraduate researchers ([Zhennan(John)
-Zhou](https://johnnzhou.github.io/) & [Ashwin Chint]()) organized
-by [Esther Jang](https://infrared-ether.medium.com/) got started on the project,
-and started integrating [iperf3](https://github.com/esnet/iperf) (C,
-[BSD-3](https://github.com/esnet/iperf/blob/master/LICENSE) into the
+Zhou](https://johnnzhou.github.io/) & [Ashwin
+Chintalapati](https://www.linkedin.com/in/ashwin-chintalapati-a54936222/))
+organized by [Esther Jang](https://infrared-ether.medium.com/) got started on
+the project, and started integrating [iperf3](https://github.com/esnet/iperf)
+(C, [BSD-3](https://github.com/esnet/iperf/blob/master/LICENSE) into the
 application. Due to its maturity, consistent history of open source activity,
 and explicit offer of "a library version of the functionality that can be used
 in other programs," I thought it was a reasonable choice. After a couple of
