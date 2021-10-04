@@ -1,7 +1,7 @@
 ---
 title: "Building iperf3 For Android 11+"
 date: 2021-09-17
-draft: true
+draft: false
 description: "Integration builds character"
 tags: [
     "android",

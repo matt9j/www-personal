@@ -1,7 +1,7 @@
 ---
 title: "Integrating Asyncronous iperf3 Tests in Android 11+"
 date: 2021-09-30
-draft: true
+draft: false
 description: "C++ also builds character"
 tags: [
     "android",
