@@ -15,9 +15,9 @@ categories: [
 type: "post"
 ---
 
-### Preamble
+## Preamble
 
-I've been helping out with the [Seattle Community
+I've been helping out the [Seattle Community
 Network](https://seattlecommunitynetwork.org) (SCN), with an ongoing project to
 build a crowdsourced network performance measurement application for Android.
 While understanding modern network performance, particularly wireless networks,
@@ -25,7 +25,8 @@ is *extremely* subtle, "speedtests" offer a crude yet popular way to measure a
 network's performance, and are easy for general audiences to interpret.
 
 Unsurprisingly, SCN sought to include a "speedtest" capability in their app! A
-team of volunteer undergraduate researchers (TODO check okay to name) organized
+team of volunteer undergraduate researchers ([Zhennan(John)
+Zhou](https://johnnzhou.github.io/) & [Ashwin Chint]()) organized
 by [Esther Jang](https://infrared-ether.medium.com/) got started on the project,
 and started integrating [iperf3](https://github.com/esnet/iperf) (C,
 [BSD-3](https://github.com/esnet/iperf/blob/master/LICENSE) into the
@@ -36,23 +37,23 @@ weeks their efforts stalled though, and I was asked for some input.
 
 This marked the beginning of the journey...
 
-### Building in Android Studio
+## Building in Android Studio
 
 Since libiperf is a c library, we sought to use the Android [Native Development
 Kit (NDK)](https://developer.android.com/ndk) to re-use the existing code and
 integrate it directly with our android application. Under the hood the NDK
 relies on the Java Native Interface (JNI) to define the interface between the
-application code running in the JVM and c/c++ functions. __Name__(TODO
-permissions) wrote a set of wrappers to expose the relevant functions to the
-main application via the JNI, and an ndk-build script to build the wrappers and
-link in a pre-built libiperf. This approach worked, but had the unfortunate
-downside of making it very diffcult to work with libiperf from within Android
-studio, and reduced our visibility into the behavior of libiperf when we were
-trying to debug its interaction with the main application. The version of
-libiperf that worked with the external build was very old (3.1.3 vs. the latest
-3.10.1 release), We had to re-build libiperf manually each time we made changes,
-and didn't have an easy way to use android logging from within the libiperf
-code.
+application code running in the JVM and c/c++ functions.
+[John](https://johnnzhou.github.io/) wrote a set of wrappers to expose the
+relevant functions to the main application via the JNI, and an ndk-build script
+to build the wrappers and link in a pre-built libiperf. This approach worked,
+but had the unfortunate downside of making it very diffcult to work with
+libiperf from within Android studio, and reduced our visibility into the
+behavior of libiperf when we were trying to debug its interaction with the main
+application. The version of libiperf that worked with the external build was
+very old (3.1.3 vs. the latest 3.10.1 release), we had to re-build libiperf
+manually each time we made changes, and didn't have an easy way to use android
+logging from within the libiperf code.
 
 Given these shortcomings, I took up the challenge of getting the latest libiperf
 to work natively with Android Studio's NDK tooling to build libiperf from source
@@ -176,7 +177,7 @@ debugging in Android Studio! Hopefully it can be useful to you as well, and can
 save you the few days I spent learning to untangle the Android native build
 process!
 
-### Hindsight
+## Hindsight
 
 Looking back on this work and the integration struggles we overcame (to be
 detailed in a future post), I'm quite intrigued by the easy crossplatform builds
