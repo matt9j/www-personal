@@ -26,6 +26,25 @@
     </item>
     
     <item>
+      <title>Chocolate Cherry Jubilee Cake</title>
+      <link>https://matt9j.net/recipes/chocolate-cherry-jubilee-cake/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/recipes/chocolate-cherry-jubilee-cake/</guid>
+      <description>My mom has been making this recipe for my family for as long as I can remember. It&amp;rsquo;s my sister&amp;rsquo;s favorite birthday cake, and probably mine as well! It&amp;rsquo;s especially good cold in a glass of milk&amp;hellip;
+Instructions  Preheat the oven to 350F Grease and flour the pan Mix cake ingredients together in a large bowl Beat 2 minutes after combined at high speed Pour into the pan Bake until a toothpick inserted into the middle comes out clean.</description>
+    </item>
+    
+    <item>
+      <title>Rethinking network congestion (Especially in community networks)</title>
+      <link>https://matt9j.net/posts/rethinking-congestion/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/posts/rethinking-congestion/</guid>
+      <description>What is congestion in a network anyway? A network link suffers from congestion when demand for the link’s resources exceeds the amount of service it can supply within some reasonable duration of time, resulting in data being dropped on the floor or delayed. Both the “resources” and “reasonable duration of time” are highly situational and vary by application and type of network.[^1] Ultimately this becomes “ugh, why is the WiFi so slow today!</description>
+    </item>
+    
+    <item>
       <title>Spinach, Mushroom, and Pesto Lasagna</title>
       <link>https://matt9j.net/recipes/pesto-lasagna/</link>
       <pubDate>Fri, 08 Jan 2021 00:00:00 +0000</pubDate>
@@ -112,6 +131,15 @@ Pie Instructions  Preheat oven to 425F. Prepare pie crust. In large bowl, combin
       <guid>https://matt9j.net/posts/hello-world/</guid>
       <description>Over the last few months I&amp;rsquo;ve re-worked a lot of my own personal infrastructure, and learned a lot along the way. My ultimate goal will be to get all my infrastructure off of feed-based social media platforms and see how hard it is to recapture some of the magic of the young web, but of course that&amp;rsquo;s a long road ahead :)
 I&amp;rsquo;m excited today to have finally finished one step on that journey, modernizing my old manual site onto a framework built around markdown content and a static site generator (I went with Hugo since I have some golang experience, I&amp;rsquo;m a little afraid of node_modules, and of course it&amp;rsquo;s fast).</description>
+    </item>
+    
+    <item>
+      <title>Experiences: Design, Implementation, and Deployment of CoLTE, a Community LTE Solution</title>
+      <link>https://matt9j.net/publications/mobicom19/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/mobicom19/</guid>
+      <description>abstract: In this paper we introduce CoLTE, a solution for LTE-based community networks. CoLTE is a lightweight, Internet-only LTE core network (EPC) designed to facilitate the deployment and operation of small-scale, community owned and operated LTE networks in rural areas with limited and unreliable backhaul. The key differentiator of CoLTE, when compared to existing LTE solutions, is that in CoLTE the EPC is designed to be located in the field and deployed alongside a small number of cellular radios (eNodeBs), as opposed to the centralized model seen in large-scale telecom networks.</description>
     </item>
     
     <item>

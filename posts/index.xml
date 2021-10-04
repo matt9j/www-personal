@@ -6,7 +6,16 @@
     <description>Recent content in Posts on matt9j:Matt Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 25 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Rethinking network congestion (Especially in community networks)</title>
+      <link>https://matt9j.net/posts/rethinking-congestion/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/posts/rethinking-congestion/</guid>
+      <description>What is congestion in a network anyway? A network link suffers from congestion when demand for the link’s resources exceeds the amount of service it can supply within some reasonable duration of time, resulting in data being dropped on the floor or delayed. Both the “resources” and “reasonable duration of time” are highly situational and vary by application and type of network.[^1] Ultimately this becomes “ugh, why is the WiFi so slow today!</description>
+    </item>
+    
     <item>
       <title>Black Lives Matter</title>
       <link>https://matt9j.net/posts/blm/</link>

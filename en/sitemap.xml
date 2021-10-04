@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://matt9j.net/tags/bandwidth/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/categories/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -19,22 +19,22 @@
                 />
   </url><url>
     <loc>https://matt9j.net/tags/common-pool-resources/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
-  </url><url>
-    <loc>https://matt9j.net/tags/community-network/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/tags/community-cellular/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/tags/community-network/</loc>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/tags/ictd/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/tags/lte/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -47,16 +47,16 @@
                 />
   </url><url>
     <loc>https://matt9j.net/tags/measurement/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/publications/cscw21/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/categories/publications/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/tags/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -69,18 +69,33 @@
                 />
   </url><url>
     <loc>https://matt9j.net/publications/www21/</loc>
-    <lastmod>2021-03-18T21:42:19-07:00</lastmod>
+    <lastmod>2021-10-01T11:05:10-07:00</lastmod>
   </url><url>
-    <loc>https://matt9j.net/tags/dinner/</loc>
-    <lastmod>2021-02-17T22:24:47-08:00</lastmod>
+    <loc>https://matt9j.net/recipes/chocolate-cherry-jubilee-cake/</loc>
+    <lastmod>2021-09-29T14:48:45-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/tags/dessert/</loc>
+    <lastmod>2021-09-29T14:48:45-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/tags/recipe/</loc>
-    <lastmod>2021-02-17T22:24:47-08:00</lastmod>
+    <lastmod>2021-09-29T14:48:45-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/recipes/</loc>
-    <lastmod>2021-02-17T22:24:47-08:00</lastmod>
+    <lastmod>2021-09-29T14:48:45-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/categories/recipes/</loc>
+    <lastmod>2021-09-29T14:48:45-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/categories/cellular/</loc>
+    <lastmod>2021-10-01T10:21:28-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/posts/</loc>
+    <lastmod>2021-10-01T10:21:28-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/posts/rethinking-congestion/</loc>
+    <lastmod>2021-10-01T10:21:28-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/tags/dinner/</loc>
     <lastmod>2021-02-17T22:24:47-08:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/recipes/pesto-lasagna/</loc>
@@ -110,14 +125,8 @@
     <loc>https://matt9j.net/categories/personal/</loc>
     <lastmod>2020-10-26T16:42:22-07:00</lastmod>
   </url><url>
-    <loc>https://matt9j.net/posts/</loc>
-    <lastmod>2020-10-26T16:42:22-07:00</lastmod>
-  </url><url>
     <loc>https://matt9j.net/tags/society/</loc>
     <lastmod>2020-10-26T16:42:22-07:00</lastmod>
-  </url><url>
-    <loc>https://matt9j.net/tags/dessert/</loc>
-    <lastmod>2020-08-09T22:53:27-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/recipes/lemon-bars/</loc>
     <lastmod>2020-08-09T22:53:27-07:00</lastmod>
@@ -152,10 +161,10 @@
     <loc>https://matt9j.net/categories/software-development/</loc>
     <lastmod>2020-01-29T12:31:12-08:00</lastmod>
   </url><url>
-    <loc>https://matt9j.net/tags/ccm/</loc>
-    <lastmod>2020-01-29T11:44:14-08:00</lastmod>
+    <loc>https://matt9j.net/publications/mobicom19/</loc>
+    <lastmod>2021-09-29T17:12:16-07:00</lastmod>
   </url><url>
-    <loc>https://matt9j.net/categories/cellular/</loc>
+    <loc>https://matt9j.net/tags/ccm/</loc>
     <lastmod>2020-01-29T11:44:14-08:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/tags/management/</loc>

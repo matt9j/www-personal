@@ -25,5 +25,14 @@
       <description>abstract: While only generating a minuscule percentage of global traffic, largely lost in the noise of large-scale analyses, remote rural networks are the physical frontier of the Internet today. Through tight integration with a local operator’s infrastructure, we gather a unique dataset to characterize and report a year of interaction between finances, utilization, and performance of a novel, remote, data-only Community LTE Network in Bokondini, Indonesia. With visibility to drill down to individual users, we find use highly unbalanced and the network supported by only a handful of relatively heavy consumers.</description>
     </item>
     
+    <item>
+      <title>Rethinking network congestion (Especially in community networks)</title>
+      <link>https://matt9j.net/posts/rethinking-congestion/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/posts/rethinking-congestion/</guid>
+      <description>What is congestion in a network anyway? A network link suffers from congestion when demand for the link’s resources exceeds the amount of service it can supply within some reasonable duration of time, resulting in data being dropped on the floor or delayed. Both the “resources” and “reasonable duration of time” are highly situational and vary by application and type of network.[^1] Ultimately this becomes “ugh, why is the WiFi so slow today!</description>
+    </item>
+    
   </channel>
 </rss>

@@ -16,5 +16,14 @@
       <description>abstract: Congestion control mechanisms, by which network users share constrained capacity on Internet links, are heavily studied in computer science. Such mechanisms are traditionally automated, assuming that users do not wish to be involved in addressing congestion. However, in community-owned and operated networks, users have control over daily operational choices. We explore the design of community-based congestion policies and mechanisms, through the lens of network capacity as a Common Pool Resource (CPR).</description>
     </item>
     
+    <item>
+      <title>Rethinking network congestion (Especially in community networks)</title>
+      <link>https://matt9j.net/posts/rethinking-congestion/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/posts/rethinking-congestion/</guid>
+      <description>What is congestion in a network anyway? A network link suffers from congestion when demand for the link’s resources exceeds the amount of service it can supply within some reasonable duration of time, resulting in data being dropped on the floor or delayed. Both the “resources” and “reasonable duration of time” are highly situational and vary by application and type of network.[^1] Ultimately this becomes “ugh, why is the WiFi so slow today!</description>
+    </item>
+    
   </channel>
 </rss>

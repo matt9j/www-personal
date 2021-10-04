@@ -26,6 +26,24 @@
     </item>
     
     <item>
+      <title>Rethinking network congestion (Especially in community networks)</title>
+      <link>https://matt9j.net/posts/rethinking-congestion/</link>
+      <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/posts/rethinking-congestion/</guid>
+      <description>What is congestion in a network anyway? A network link suffers from congestion when demand for the link’s resources exceeds the amount of service it can supply within some reasonable duration of time, resulting in data being dropped on the floor or delayed. Both the “resources” and “reasonable duration of time” are highly situational and vary by application and type of network.[^1] Ultimately this becomes “ugh, why is the WiFi so slow today!</description>
+    </item>
+    
+    <item>
+      <title>Experiences: Design, Implementation, and Deployment of CoLTE, a Community LTE Solution</title>
+      <link>https://matt9j.net/publications/mobicom19/</link>
+      <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/mobicom19/</guid>
+      <description>abstract: In this paper we introduce CoLTE, a solution for LTE-based community networks. CoLTE is a lightweight, Internet-only LTE core network (EPC) designed to facilitate the deployment and operation of small-scale, community owned and operated LTE networks in rural areas with limited and unreliable backhaul. The key differentiator of CoLTE, when compared to existing LTE solutions, is that in CoLTE the EPC is designed to be located in the field and deployed alongside a small number of cellular radios (eNodeBs), as opposed to the centralized model seen in large-scale telecom networks.</description>
+    </item>
+    
+    <item>
       <title>Scaling community cellular networks with community cellular manager</title>
       <link>https://matt9j.net/publications/nsdi19/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
