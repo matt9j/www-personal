@@ -6,7 +6,16 @@
     <description>Recent content in Categories on matt9j:Matt Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>recipes</title>
+      <link>https://matt9j.net/categories/recipes/</link>
+      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/categories/recipes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>cellular</title>
       <link>https://matt9j.net/categories/cellular/</link>
@@ -31,15 +40,6 @@
       <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/categories/publications/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>recipes</title>
-      <link>https://matt9j.net/categories/recipes/</link>
-      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://matt9j.net/categories/recipes/</guid>
       <description></description>
     </item>
     

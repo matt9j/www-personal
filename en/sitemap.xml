@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://matt9j.net/tags/android/</loc>
-    <lastmod>2021-10-04T16:18:14-07:00</lastmod>
-  </url><url>
     <loc>https://matt9j.net/categories/</loc>
-    <lastmod>2021-10-04T16:18:14-07:00</lastmod>
+    <lastmod>2021-10-09T13:26:43-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -18,17 +15,11 @@
                 href="https://matt9j.net/categories/"
                 />
   </url><url>
-    <loc>https://matt9j.net/categories/cellular/</loc>
-    <lastmod>2021-10-04T16:18:14-07:00</lastmod>
-  </url><url>
-    <loc>https://matt9j.net/tags/ictd/</loc>
-    <lastmod>2021-10-04T16:18:14-07:00</lastmod>
-  </url><url>
-    <loc>https://matt9j.net/posts/integrating-iperf/</loc>
-    <lastmod>2021-10-04T16:18:14-07:00</lastmod>
+    <loc>https://matt9j.net/recipes/green-bean-casserole/</loc>
+    <lastmod>2021-10-09T13:26:43-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/</loc>
-    <lastmod>2021-10-04T16:18:14-07:00</lastmod>
+    <lastmod>2021-10-09T13:26:43-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
@@ -39,6 +30,40 @@
                 hreflang="en"
                 href="https://matt9j.net/"
                 />
+  </url><url>
+    <loc>https://matt9j.net/tags/recipe/</loc>
+    <lastmod>2021-10-09T13:26:43-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/recipes/</loc>
+    <lastmod>2021-10-09T13:26:43-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/categories/recipes/</loc>
+    <lastmod>2021-10-09T13:26:43-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/tags/</loc>
+    <lastmod>2021-10-09T13:26:43-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://matt9j.net/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://matt9j.net/tags/"
+                />
+  </url><url>
+    <loc>https://matt9j.net/tags/android/</loc>
+    <lastmod>2021-10-04T16:18:14-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/categories/cellular/</loc>
+    <lastmod>2021-10-04T16:18:14-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/tags/ictd/</loc>
+    <lastmod>2021-10-04T16:18:14-07:00</lastmod>
+  </url><url>
+    <loc>https://matt9j.net/posts/integrating-iperf/</loc>
+    <lastmod>2021-10-04T16:18:14-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/tags/networks/</loc>
     <lastmod>2021-10-04T16:18:14-07:00</lastmod>
@@ -51,19 +76,6 @@
   </url><url>
     <loc>https://matt9j.net/categories/software-development/</loc>
     <lastmod>2021-10-04T16:18:14-07:00</lastmod>
-  </url><url>
-    <loc>https://matt9j.net/tags/</loc>
-    <lastmod>2021-10-04T16:18:14-07:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://matt9j.net/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://matt9j.net/tags/"
-                />
   </url><url>
     <loc>https://matt9j.net/posts/building-iperf/</loc>
     <lastmod>2021-10-04T16:09:24-07:00</lastmod>
@@ -99,15 +111,6 @@
     <lastmod>2021-09-29T14:48:45-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/tags/dessert/</loc>
-    <lastmod>2021-09-29T14:48:45-07:00</lastmod>
-  </url><url>
-    <loc>https://matt9j.net/tags/recipe/</loc>
-    <lastmod>2021-09-29T14:48:45-07:00</lastmod>
-  </url><url>
-    <loc>https://matt9j.net/recipes/</loc>
-    <lastmod>2021-09-29T14:48:45-07:00</lastmod>
-  </url><url>
-    <loc>https://matt9j.net/categories/recipes/</loc>
     <lastmod>2021-09-29T14:48:45-07:00</lastmod>
   </url><url>
     <loc>https://matt9j.net/posts/rethinking-congestion/</loc>
