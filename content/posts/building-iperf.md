@@ -25,8 +25,9 @@ is *extremely* subtle, "speedtests" offer a crude yet popular way to measure a
 network's performance, and are easy for general audiences to interpret.
 
 Unsurprisingly, SCN sought to include a "speedtest" capability in their app! A
-team of volunteer undergraduate researchers ([Zhennan(John)
-Zhou](https://johnnzhou.github.io/) & [Ashwin
+team of an undergraduate researcher ([Zhennan(John)
+Zhou](https://johnnzhou.github.io/)) and a volunteer high school student
+([Ashwin
 Chintalapati](https://www.linkedin.com/in/ashwin-chintalapati-a54936222/))
 organized by [Esther Jang](https://infrared-ether.medium.com/) got started on
 the project, and started integrating [iperf3](https://github.com/esnet/iperf)
