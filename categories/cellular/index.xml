@@ -14,7 +14,7 @@
       
       <guid>https://matt9j.net/posts/integrating-iperf/</guid>
       <description>Preamble I&amp;rsquo;ve been helping out the Seattle Community Network (SCN), with an ongoing project to build a crowdsourced network performance measurement application for Android. While understanding modern network performance, particularly wireless networks, is extremely subtle, &amp;ldquo;speedtests&amp;rdquo; offer a crude yet popular way to measure a network&amp;rsquo;s performance, and are easy for general audiences to interpret.
-Unsurprisingly, SCN sought to include a &amp;ldquo;speedtest&amp;rdquo; capability in their app! A team of volunteer undergraduate researchers (Zhennan(John) Zhou &amp;amp; Ashwin Chintalapati) organized by Esther Jang got started on the project, and started integrating iperf3 (C, BSD-3 into the application.</description>
+Unsurprisingly, SCN sought to include a &amp;ldquo;speedtest&amp;rdquo; capability in their app! A team of an undergraduate researcher (Zhennan(John) Zhou) and a volunteer high school student (Ashwin Chintalapati) organized by Esther Jang got started on the project, and started integrating iperf3 (C, BSD-3 into the application.</description>
     </item>
     
     <item>
