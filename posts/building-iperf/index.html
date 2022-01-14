@@ -1,214 +1,286 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
-<title>Building iperf3 For Android 11&#43; - matt9j:Matt Johnson</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<meta name="generator" content="Hugo 0.88.1" /><meta itemprop="name" content="Building iperf3 For Android 11&#43;">
-<meta itemprop="description" content="Integration builds character"><meta itemprop="datePublished" content="2021-09-17T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-10-18T10:03:25-07:00" />
-<meta itemprop="wordCount" content="1108">
-<meta itemprop="keywords" content="android,seattle-community-network,networks,ICTD," /><meta property="og:title" content="Building iperf3 For Android 11&#43;" />
+<!DOCTYPE html>
+<html
+  lang="en-us"
+  class="dark"
+><head>
+  <meta charset="utf-8" />
+  
+    <meta http-equiv="content-language" content="en-us" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <title>Building iperf3 For Android 11&#43; &middot; matt9j:Matt Johnson</title>
+    <meta name="title" content="Building iperf3 For Android 11&#43; &middot; matt9j:Matt Johnson" />
+  
+  <meta name="description" content="Integration builds character" />
+  
+  
+  
+  <link rel="canonical" href="https://matt9j.net/posts/building-iperf/" />
+  
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/schemes/congo.min.b48d6ba061dc77186a2524fb8aac5ac3823b2679a9299ca60325abbccc9c1764c884715f0ba24b4e2776cb3814df4af1f4c854b87207cd5d4c7a254da9b55751.css"
+    integrity="sha512-tI1roGHcdxhqJST7iqxaw4I7JnmpKZymAyWrvMycF2TIhHFfC6JLTid2yzgU30rx9MhUuHIHzV1MeiVNqbVXUQ=="
+  />
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/compiled/main.min.0616cd1037a5b5a117adb2a5811247073e87aa85bf90466b8597b7f950fea39c6daa6d034e80941fd15e7bd8c1f84e7bd1e2775064f5dfb08fd79622ef2deba3.css"
+    integrity="sha512-BhbNEDeltaEXrbKlgRJHBz6HqoW/kEZrhZe3&#43;VD&#43;o5xtqm0DToCUH9Fee9jB&#43;E570eJ3UGT137CP15Yi7y3row=="
+  />
+  
+  
+  
+    <script>
+      function loadPreferredAppearance() {
+        if (localStorage.preferredAppearance === "dark" || (!("preferredAppearance" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      }
+      function setPreferredAppearance(scheme) {
+        if (scheme == "default") {
+          localStorage.removeItem("preferredAppearance");
+        } else {
+          localStorage.preferredAppearance = scheme;
+        }
+        loadPreferredAppearance();
+      }
+      loadPreferredAppearance();
+      window.matchMedia("(prefers-color-scheme: dark)").addListener(loadPreferredAppearance);
+    </script>
+  
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:title" content="Building iperf3 For Android 11&#43;" />
 <meta property="og:description" content="Integration builds character" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://matt9j.net/posts/building-iperf/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-09-17T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-10-18T10:03:25-07:00" />
+<meta property="article:modified_time" content="2021-09-17T00:00:00+00:00" />
 
-<meta name="twitter:card" content="summary"/>
+
+  <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Building iperf3 For Android 11&#43;"/>
 <meta name="twitter:description" content="Integration builds character"/>
-<meta name="twitter:site" content="@matt9j"/>
-<link rel="stylesheet" href="/css/bundle.min.e343e893f1b051e102213e210b10bf9a52bdde305e250fde56890e30cc285bf5.css" integrity="sha256-40Pok/GwUeECIT4hCxC/mlK93jBeJQ/eVokOMMwoW/U=">
-        <link rel="stylesheet" href="/css/add-on.css">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "articleSection": "Posts",
+    "name": "Building iperf3 For Android 11\u002b",
+    "headline": "Building iperf3 For Android 11\u002b",
+    "description": "Integration builds character",
+    "inLanguage": "en-us",
+    "author" : {
+      "@type": "Person",
+      "name": "Matt Johnson"
+    },
+    "creator" : {
+      "@type": "Person",
+      "name": "Matt Johnson"
+    },
+    "copyrightHolder": "Matt Johnson",
+    "copyrightYear": "2021",
+    "dateCreated": "2021-09-17T00:00:00\u002b00:00",
+    "datePublished": "2021-09-17T00:00:00\u002b00:00",
+    "dateModified": "2021-09-17T00:00:00\u002b00:00",
+    "url" : "https:\/\/matt9j.net\/posts\/building-iperf\/",
+    "keywords": ["android","seattle-community-network","networks","ICTD"],
+    "wordCount": "1111"
+  }
+  </script>
+
+
+  
+  
+    <meta name="generator" content="Hugo 0.91.2" />
+  
+  
+  <meta name="author" content="Matt Johnson" />
+  
+    
+      <link href="https://github.com/matt9j" rel="me" />
+    
+      <link href="https://scholar.google.com/citations?user=cTILBksAAAAJ&amp;hl=en" rel="me" />
+    
+      <link href="https://keybase.io/matt9j" rel="me" />
+    
+      <link href="https://linkedin.com/in/matt9j" rel="me" />
+    
+      <link href="https://orcid.org/0000-0003-2095-0225" rel="me" />
+    
+      <link href="https://twitter.com/matt9j" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+  
+  
 </head>
-
-  <body>
-    
-<header id="site-header">
-  <nav id="site-nav">
-    <h1 class="nav-title">
-      <a href="/">
-        
-          
-            matt9j:
-          
-          
-            posts
-          
-        
-      </a>
-    </h1>
-    <menu id="site-nav-menu" class="flyout-menu">
-      
-        
-          
-          
-            <a href="/about/" class="link"><i class='fas fa-id-card'></i> About</a>
-          
-        
-      
-        
-          
-          
-            <a href="/publications/" class="link"><i class='fas fa-book'></i> Publications</a>
-          
-        
-      
-        
-          
-          
-            <a href="/posts/" class="link"><i class='far fa-newspaper'></i> Blog Posts</a>
-          
-        
-      
-        
-          
-          
-            <a href="/recipes/" class="link"><i class='far fa-newspaper'></i> Recipes</a>
-          
-        
-      
-        
-          
-          
-            <a href="/categories/" class="link"><i class='fas fa-sitemap'></i> Categories</a>
-          
-        
-      
-        
-          
-          
-            <a href="/contact/" class="link"><i class='fas fa-envelope'></i> Contact</a>
-          
-        
-      
-      
-      
-    </menu>
-    
-    
-    <a href="#lang-menu" class="lang-toggle" lang="en">en</a>
-    <a href="#site-nav" class="nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
-  </nav>
-  <menu id="lang-menu" class="flyout-menu">
-  <a href="#" lang="en" class="link active">English (en)</a>
+<body
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"
+  ><header
+  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-900 dark:text-neutral"
+>
   
+  <div>
     
-      
-    
-      
-        <a href="/es" lang="es" class="no-lang link">Español (México) (es)</a>
-      
-    
+      <a
+        class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+        rel="me"
+        href="/"
+        >matt9j:Matt Johnson</a
+      >
+  </div>
   
-</menu>
-
   
-</header>
-
-    <div id="wrapper">
-      <section id="site-intro" class="hidden-single-column">
-  <a href="/"><img src="/img/main/profile-picture.jpg" class="circle" width="50%" alt="matt9j logo" /></a>
-  <header>
-    <h1>matt9j</h1>
-  </header>
-  <main>
-    <p>A networking researcher interested in the challenges of infrastructure at the end of the tail of connectivity</p>
-  </main>
-  
-    <footer>
-      <ul class="socnet-icons">
+    <nav>
+      <ul class="flex flex-col list-none sm:flex-row">
         
-
-        <li><a href="//github.com/matt9j" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
-
-
-
-
-
-
-
-
-
-
-
-<li><a href="//linkedin.com/in/matt9j" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li><a href="//twitter.com/matt9j" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
-
-
-
-
-
-<li><a href="//scholar.google.com/citations?user=cTILBksAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
-<li><a href="//orcid.org/0000-0003-2095-0225" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
-
-<li><a href="//keybase.io/matt9j" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
-
-
-
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/posts/"
+              title="Posts"
+              >Posts</a
+            >
+          </li>
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/publications/"
+              title=""
+              >Publications</a
+            >
+          </li>
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/recipes/"
+              title=""
+              >Recipes</a
+            >
+          </li>
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/categories/"
+              title="Categories"
+              >Categories</a
+            >
+          </li>
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/contact/"
+              title="Contact"
+              >Contact</a
+            >
+          </li>
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href="/about/"
+              title="About Me"
+              >About Me</a
+            >
+          </li>
+        
       </ul>
-    </footer>
+    </nav>
   
-</section>
-
-      <main id="site-main">
-        <article class="post">
-  <header>
-  <div class="title">
-    
-      <h2><a href="/posts/building-iperf/">Building iperf3 For Android 11&#43;</a></h2>
-    
-    
-      <p>Integration builds character</p>
-    
-  </div>
-  <div class="meta">
-    <time class="published" datetime="2021-09-17 00:00:00 &#43;0000 UTC">
-      September 17, 2021
-    </time>
-    <span class="author"></span>
-    
-      <p>6 minutes read</p>
-    
-  </div>
 </header>
+<main class="flex-grow">
+  <article class="max-w-prose">
+    <header>
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Building iperf3 For Android 11+
+      </h1>
+      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400">
+        
 
-  <section id="socnet-share">
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row items-center">
+    
+    
+      <time datetime="2021-09-17 00:00:00 &#43;0000 UTC">17 September 2021</time>
+<span class="px-2 text-primary-500">&middot;</span><span title="Reading time">6 mins</span>
     
 
+    
+    
+  </div>
 
 
-
-  
-        <a href="mailto:?subject=Check out this post by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fmatt9j.net%2fposts%2fbuilding-iperf%2f" target="_blank" class="share-btn email" data-proofer-ignore>
-          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
-        </a>
-  
-
-
-  </section>
-  
-
-  <div class="content">
-    <h2 id="preamble">Preamble</h2>
+      </div>
+    </header>
+    <section class="prose dark:prose-light">
+      <h2 id="preamble">Preamble <a class="heading-anchor" href="#preamble" aria-label="Anchor">#</a></h2>
 <p>I&rsquo;ve been helping out the <a href="https://seattlecommunitynetwork.org">Seattle Community
 Network</a> (SCN), with an ongoing project to
 build a crowdsourced network performance measurement application for Android.
@@ -228,7 +300,7 @@ and explicit offer of &ldquo;a library version of the functionality that can be 
 in other programs,&rdquo; I thought it was a reasonable choice. After a couple of
 weeks their efforts stalled though, and I was asked for some input.</p>
 <p>This marked the beginning of the journey&hellip;</p>
-<h2 id="building-in-android-studio">Building in Android Studio</h2>
+<h2 id="building-in-android-studio">Building in Android Studio <a class="heading-anchor" href="#building-in-android-studio" aria-label="Anchor">#</a></h2>
 <p>Since libiperf is a c library, we sought to use the Android <a href="https://developer.android.com/ndk">Native Development
 Kit (NDK)</a> to re-use the existing code and
 integrate it directly with our android application. Under the hood the NDK
@@ -283,74 +355,74 @@ docs</a>, I created
 the following CMakeLists.txt to translate from the build metadata passed to
 CMake 3.18.1 (installed via SDK Tools Manager) from Gradle 7.0.2 in Android
 Studio to the correct configuration environment variables for autotools.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-CMake" data-lang="CMake"><span style="color:#75715e"># Sets the minimum version of CMake required to build the native library.
-</span><span style="color:#75715e"></span>cmake_minimum_required(<span style="color:#e6db74">VERSION</span> <span style="color:#e6db74">3.16.3</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>set(<span style="color:#e6db74">IPERF_DIRECTORY_NAME</span>
-    <span style="color:#e6db74">iperf-3.10.1</span>
-    )<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Generate toolchain paths manually according to https://developer.android.com/ndk/guides/other_build_systems.
-</span><span style="color:#75715e"># This may need to be updated if the NDK changes
-</span><span style="color:#75715e"></span>string(<span style="color:#e6db74">TOLOWER</span> <span style="color:#e6db74">&#34;${CMAKE_HOST_SYSTEM_NAME}-${CMAKE_HOST_SYSTEM_PROCESSOR}&#34;</span> <span style="color:#e6db74">AUTOTOOLS_EXT_BUILD_ARCH</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>message(<span style="color:#e6db74">STATUS</span> <span style="color:#e6db74">&#34;Toolchain build architecture: ${AUTOTOOLS_EXT_BUILD_ARCH}&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>SET(<span style="color:#e6db74">AUTOTOOLS_EXT_TOOLCHAIN</span> <span style="color:#e6db74">&#34;${CMAKE_ANDROID_NDK}/toolchains/llvm/prebuilt/${AUTOTOOLS_EXT_BUILD_ARCH}&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>if(<span style="color:#f92672">${</span>CMAKE_ANDROID_ARCH<span style="color:#f92672">}</span> <span style="color:#e6db74">MATCHES</span> <span style="color:#e6db74">&#34;^arm$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    SET(<span style="color:#e6db74">AUTOTOOLS_EXT_TARGET</span> <span style="color:#e6db74">&#34;armv7a-linux-androideabi&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>elseif(<span style="color:#f92672">${</span>CMAKE_ANDROID_ARCH<span style="color:#f92672">}</span> <span style="color:#e6db74">MATCHES</span> <span style="color:#e6db74">&#34;^arm64$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    SET(<span style="color:#e6db74">AUTOTOOLS_EXT_TARGET</span> <span style="color:#e6db74">&#34;aarch64-linux-android&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>elseif(<span style="color:#f92672">${</span>CMAKE_ANDROID_ARCH<span style="color:#f92672">}</span> <span style="color:#e6db74">MATCHES</span> <span style="color:#e6db74">&#34;^x86$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    SET(<span style="color:#e6db74">AUTOTOOLS_EXT_TARGET</span> <span style="color:#e6db74">&#34;i686-linux-android&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>elseif(<span style="color:#f92672">${</span>CMAKE_ANDROID_ARCH<span style="color:#f92672">}</span> <span style="color:#e6db74">MATCHES</span> <span style="color:#e6db74">&#34;^x86_64$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    SET(<span style="color:#e6db74">AUTOTOOLS_EXT_TARGET</span> <span style="color:#e6db74">&#34;x86_64-linux-android&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>else()<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">FATAL_ERROR</span> <span style="color:#e6db74">&#34;No target string defined for arch: ${CMAKE_ANDROID_ARCH}&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>endif()<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>SET(<span style="color:#e6db74">AUTOTOOLS_EXT_ABI</span> <span style="color:#e6db74">&#34;24&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>if(<span style="color:#e6db74">NOT</span> <span style="color:#f92672">${</span>CMAKE_C_COMPILER_TARGET<span style="color:#f92672">}</span> <span style="color:#e6db74">MATCHES</span> <span style="color:#e6db74">&#34;android.*${AUTOTOOLS_EXT_ABI}$&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">ERROR</span> <span style="color:#e6db74">&#34;The CMake ABI version does not match the version set by gradle&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">ERROR</span> <span style="color:#e6db74">&#34;Update the AUTOTOOLS_EXT_ABI version to match&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>    message(<span style="color:#e6db74">FATAL_ERROR</span> <span style="color:#e6db74">&#34;ABI ${AUTOTOOLS_EXT_ABI} does not match target ${CMAKE_C_COMPILER_TARGET}&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>endif()<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Link libiperf statically but with position independent code support to be embedded in a higher level dynamic library
-</span><span style="color:#75715e"></span>SET(<span style="color:#e6db74">AUTOMAKE_EXT_CXX_FLAGS</span> <span style="color:#e6db74">&#34;${CMAKE_CXX_FLAGS} -static -fPIC&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>SET(<span style="color:#e6db74">AUTOMAKE_EXT_C_FLAGS</span> <span style="color:#e6db74">&#34;${CMAKE_C_FLAGS} -static -fPIC&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>include(<span style="color:#e6db74">ExternalProject</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>ExternalProject_Add(
-        <span style="color:#e6db74">iperf_autotools</span>
-        <span style="color:#e6db74">SOURCE_DIR</span> <span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span>
-        <span style="color:#e6db74">CONFIGURE_COMMAND</span> <span style="color:#f92672">${</span>CMAKE_CURRENT_SOURCE_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span><span style="color:#e6db74">/configure</span> <span style="color:#e6db74">--host</span> <span style="color:#f92672">${</span>AUTOTOOLS_EXT_TARGET<span style="color:#f92672">}</span> <span style="color:#e6db74">AR=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/llvm-ar</span> <span style="color:#e6db74">CC=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TARGET<span style="color:#f92672">}${</span>AUTOTOOLS_EXT_ABI<span style="color:#f92672">}</span><span style="color:#e6db74">-clang</span> <span style="color:#e6db74">AS=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TARGET<span style="color:#f92672">}${</span>AUTOTOOLS_EXT_ABI<span style="color:#f92672">}</span><span style="color:#e6db74">-clang</span> <span style="color:#e6db74">CXX=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TARGET<span style="color:#f92672">}${</span>AUTOTOOLS_EXT_ABI<span style="color:#f92672">}</span><span style="color:#e6db74">-clang++</span> <span style="color:#e6db74">LD=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/ld</span> <span style="color:#e6db74">RANLIB=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/llvm-ranlib</span> <span style="color:#e6db74">STRIP=</span><span style="color:#f92672">${</span>AUTOTOOLS_EXT_TOOLCHAIN<span style="color:#f92672">}</span><span style="color:#e6db74">/bin/llvm-strip</span> <span style="color:#e6db74">CFLAGS=</span><span style="color:#f92672">${</span>AUTOMAKE_EXT_C_FLAGS<span style="color:#f92672">}</span> <span style="color:#e6db74">CXXFLAGS=</span><span style="color:#f92672">${</span>AUTOMAKE_EXT_CXX_FLAGS<span style="color:#f92672">}</span> <span style="color:#e6db74">--without-openssl</span> <span style="color:#e6db74">--prefix=</span><span style="color:#f92672">${</span>CMAKE_CURRENT_BINARY_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span>
-        <span style="color:#e6db74">PREFIX</span> <span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span>
-        <span style="color:#e6db74">BUILD_COMMAND</span> <span style="color:#e6db74">make</span>
-        <span style="color:#e6db74">BUILD_IN_SOURCE</span> <span style="color:#e6db74">1</span>
-        <span style="color:#e6db74">BUILD_BYPRODUCTS</span> <span style="color:#f92672">${</span>CMAKE_CURRENT_BINARY_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span><span style="color:#e6db74">/lib/libiperf.a</span>
-)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Create a CMake &#34;imported&#34; &#34;interface&#34; library representing the outputs from the autotools process.
-</span><span style="color:#75715e"></span>add_library(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">INTERFACE</span> <span style="color:#e6db74">IMPORTED</span> <span style="color:#e6db74">GLOBAL</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Let CMake know these directories can be created since they are referred below-- they would have
-</span><span style="color:#75715e"># been eventually created by automake
-</span><span style="color:#75715e"></span>file (<span style="color:#e6db74">MAKE_DIRECTORY</span> <span style="color:#e6db74">&#34;${CMAKE_CURRENT_BINARY_DIR}/${IPERF_DIRECTORY_NAME}/lib&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>file (<span style="color:#e6db74">MAKE_DIRECTORY</span> <span style="color:#e6db74">&#34;${CMAKE_CURRENT_BINARY_DIR}/${IPERF_DIRECTORY_NAME}/include&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Pass the headers and libraries created by automake to dependent targets for linking and/or inclusion.
-</span><span style="color:#75715e"></span>target_include_directories(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">INTERFACE</span> <span style="color:#f92672">${</span>CMAKE_CURRENT_BINARY_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span><span style="color:#e6db74">/include</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>target_link_libraries(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">INTERFACE</span> <span style="color:#e6db74">&#34;${CMAKE_CURRENT_BINARY_DIR}/${IPERF_DIRECTORY_NAME}/lib/libiperf.a&#34;</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Make sure the iperf interface library target triggers the autotools build.
-</span><span style="color:#75715e"></span>add_dependencies(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">iperf_autotools</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e"># Add extra includes based on the current structure of the wrapper codebase.
-</span><span style="color:#75715e"># This somewhat breaks the API encapsulation.
-</span><span style="color:#75715e"># TODO(matt9j) Should ultimately not be needed if the API interface were used cleanly
-</span><span style="color:#75715e"></span>target_include_directories(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">INTERFACE</span> <span style="color:#f92672">${</span>CMAKE_CURRENT_SOURCE_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span><span style="color:#e6db74">/src</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010"></span>target_include_directories(<span style="color:#e6db74">iperf</span> <span style="color:#e6db74">INTERFACE</span> <span style="color:#f92672">${</span>CMAKE_CURRENT_BINARY_DIR<span style="color:#f92672">}</span><span style="color:#e6db74">/</span><span style="color:#f92672">${</span>IPERF_DIRECTORY_NAME<span style="color:#f92672">}</span><span style="color:#e6db74">/src</span>)<span style="color:#960050;background-color:#1e0010">
-</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-CMake" data-lang="CMake"><span class="c"># Sets the minimum version of CMake required to build the native library.
+</span><span class="c"></span><span class="nb">cmake_minimum_required</span><span class="p">(</span><span class="s">VERSION</span> <span class="s">3.16.3</span><span class="p">)</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="nb">set</span><span class="p">(</span><span class="s">IPERF_DIRECTORY_NAME</span>
+    <span class="s">iperf-3.10.1</span>
+    <span class="p">)</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="c"># Generate toolchain paths manually according to https://developer.android.com/ndk/guides/other_build_systems.
+</span><span class="c"># This may need to be updated if the NDK changes
+</span><span class="c"></span><span class="nb">string</span><span class="p">(</span><span class="s">TOLOWER</span> <span class="s2">&#34;${CMAKE_HOST_SYSTEM_NAME}-${CMAKE_HOST_SYSTEM_PROCESSOR}&#34;</span> <span class="s">AUTOTOOLS_EXT_BUILD_ARCH</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">message</span><span class="p">(</span><span class="s">STATUS</span> <span class="s2">&#34;Toolchain build architecture: ${AUTOTOOLS_EXT_BUILD_ARCH}&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">SET</span><span class="p">(</span><span class="s">AUTOTOOLS_EXT_TOOLCHAIN</span> <span class="s2">&#34;${CMAKE_ANDROID_NDK}/toolchains/llvm/prebuilt/${AUTOTOOLS_EXT_BUILD_ARCH}&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">if</span><span class="p">(</span><span class="o">${</span><span class="nv">CMAKE_ANDROID_ARCH</span><span class="o">}</span> <span class="s">MATCHES</span> <span class="s2">&#34;^arm$&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span>    <span class="nb">SET</span><span class="p">(</span><span class="s">AUTOTOOLS_EXT_TARGET</span> <span class="s2">&#34;armv7a-linux-androideabi&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">elseif</span><span class="p">(</span><span class="o">${</span><span class="nv">CMAKE_ANDROID_ARCH</span><span class="o">}</span> <span class="s">MATCHES</span> <span class="s2">&#34;^arm64$&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span>    <span class="nb">SET</span><span class="p">(</span><span class="s">AUTOTOOLS_EXT_TARGET</span> <span class="s2">&#34;aarch64-linux-android&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">elseif</span><span class="p">(</span><span class="o">${</span><span class="nv">CMAKE_ANDROID_ARCH</span><span class="o">}</span> <span class="s">MATCHES</span> <span class="s2">&#34;^x86$&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span>    <span class="nb">SET</span><span class="p">(</span><span class="s">AUTOTOOLS_EXT_TARGET</span> <span class="s2">&#34;i686-linux-android&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">elseif</span><span class="p">(</span><span class="o">${</span><span class="nv">CMAKE_ANDROID_ARCH</span><span class="o">}</span> <span class="s">MATCHES</span> <span class="s2">&#34;^x86_64$&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span>    <span class="nb">SET</span><span class="p">(</span><span class="s">AUTOTOOLS_EXT_TARGET</span> <span class="s2">&#34;x86_64-linux-android&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">else</span><span class="p">()</span><span class="err">
+</span><span class="err"></span>    <span class="nb">message</span><span class="p">(</span><span class="s">FATAL_ERROR</span> <span class="s2">&#34;No target string defined for arch: ${CMAKE_ANDROID_ARCH}&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">endif</span><span class="p">()</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="nb">SET</span><span class="p">(</span><span class="s">AUTOTOOLS_EXT_ABI</span> <span class="s2">&#34;24&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="nb">if</span><span class="p">(</span><span class="s">NOT</span> <span class="o">${</span><span class="nv">CMAKE_C_COMPILER_TARGET</span><span class="o">}</span> <span class="s">MATCHES</span> <span class="s2">&#34;android.*${AUTOTOOLS_EXT_ABI}$&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span>    <span class="nb">message</span><span class="p">(</span><span class="s">ERROR</span> <span class="s2">&#34;The CMake ABI version does not match the version set by gradle&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span>    <span class="nb">message</span><span class="p">(</span><span class="s">ERROR</span> <span class="s2">&#34;Update the AUTOTOOLS_EXT_ABI version to match&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span>    <span class="nb">message</span><span class="p">(</span><span class="s">FATAL_ERROR</span> <span class="s2">&#34;ABI ${AUTOTOOLS_EXT_ABI} does not match target ${CMAKE_C_COMPILER_TARGET}&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">endif</span><span class="p">()</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="c"># Link libiperf statically but with position independent code support to be embedded in a higher level dynamic library
+</span><span class="c"></span><span class="nb">SET</span><span class="p">(</span><span class="s">AUTOMAKE_EXT_CXX_FLAGS</span> <span class="s2">&#34;${CMAKE_CXX_FLAGS} -static -fPIC&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">SET</span><span class="p">(</span><span class="s">AUTOMAKE_EXT_C_FLAGS</span> <span class="s2">&#34;${CMAKE_C_FLAGS} -static -fPIC&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="nb">include</span><span class="p">(</span><span class="s">ExternalProject</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">ExternalProject_Add</span><span class="p">(</span>
+        <span class="s">iperf_autotools</span>
+        <span class="s">SOURCE_DIR</span> <span class="o">${</span><span class="nv">IPERF_DIRECTORY_NAME</span><span class="o">}</span>
+        <span class="s">CONFIGURE_COMMAND</span> <span class="o">${</span><span class="nv">CMAKE_CURRENT_SOURCE_DIR</span><span class="o">}</span><span class="s">/</span><span class="o">${</span><span class="nv">IPERF_DIRECTORY_NAME</span><span class="o">}</span><span class="s">/configure</span> <span class="s">--host</span> <span class="o">${</span><span class="nv">AUTOTOOLS_EXT_TARGET</span><span class="o">}</span> <span class="s">AR=</span><span class="o">${</span><span class="nv">AUTOTOOLS_EXT_TOOLCHAIN</span><span class="o">}</span><span class="s">/bin/llvm-ar</span> <span class="s">CC=</span><span class="o">${</span><span class="nv">AUTOTOOLS_EXT_TOOLCHAIN</span><span class="o">}</span><span class="s">/bin/</span><span class="o">${</span><span class="nv">AUTOTOOLS_EXT_TARGET</span><span class="o">}${</span><span class="nv">AUTOTOOLS_EXT_ABI</span><span class="o">}</span><span class="s">-clang</span> <span class="s">AS=</span><span class="o">${</span><span class="nv">AUTOTOOLS_EXT_TOOLCHAIN</span><span class="o">}</span><span class="s">/bin/</span><span class="o">${</span><span class="nv">AUTOTOOLS_EXT_TARGET</span><span class="o">}${</span><span class="nv">AUTOTOOLS_EXT_ABI</span><span class="o">}</span><span class="s">-clang</span> <span class="s">CXX=</span><span class="o">${</span><span class="nv">AUTOTOOLS_EXT_TOOLCHAIN</span><span class="o">}</span><span class="s">/bin/</span><span class="o">${</span><span class="nv">AUTOTOOLS_EXT_TARGET</span><span class="o">}${</span><span class="nv">AUTOTOOLS_EXT_ABI</span><span class="o">}</span><span class="s">-clang++</span> <span class="s">LD=</span><span class="o">${</span><span class="nv">AUTOTOOLS_EXT_TOOLCHAIN</span><span class="o">}</span><span class="s">/bin/ld</span> <span class="s">RANLIB=</span><span class="o">${</span><span class="nv">AUTOTOOLS_EXT_TOOLCHAIN</span><span class="o">}</span><span class="s">/bin/llvm-ranlib</span> <span class="s">STRIP=</span><span class="o">${</span><span class="nv">AUTOTOOLS_EXT_TOOLCHAIN</span><span class="o">}</span><span class="s">/bin/llvm-strip</span> <span class="s">CFLAGS=</span><span class="o">${</span><span class="nv">AUTOMAKE_EXT_C_FLAGS</span><span class="o">}</span> <span class="s">CXXFLAGS=</span><span class="o">${</span><span class="nv">AUTOMAKE_EXT_CXX_FLAGS</span><span class="o">}</span> <span class="s">--without-openssl</span> <span class="s">--prefix=</span><span class="o">${</span><span class="nv">CMAKE_CURRENT_BINARY_DIR</span><span class="o">}</span><span class="s">/</span><span class="o">${</span><span class="nv">IPERF_DIRECTORY_NAME</span><span class="o">}</span>
+        <span class="s">PREFIX</span> <span class="o">${</span><span class="nv">IPERF_DIRECTORY_NAME</span><span class="o">}</span>
+        <span class="s">BUILD_COMMAND</span> <span class="s">make</span>
+        <span class="s">BUILD_IN_SOURCE</span> <span class="s">1</span>
+        <span class="s">BUILD_BYPRODUCTS</span> <span class="o">${</span><span class="nv">CMAKE_CURRENT_BINARY_DIR</span><span class="o">}</span><span class="s">/</span><span class="o">${</span><span class="nv">IPERF_DIRECTORY_NAME</span><span class="o">}</span><span class="s">/lib/libiperf.a</span>
+<span class="p">)</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="c"># Create a CMake &#34;imported&#34; &#34;interface&#34; library representing the outputs from the autotools process.
+</span><span class="c"></span><span class="nb">add_library</span><span class="p">(</span><span class="s">iperf</span> <span class="s">INTERFACE</span> <span class="s">IMPORTED</span> <span class="s">GLOBAL</span><span class="p">)</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="c"># Let CMake know these directories can be created since they are referred below-- they would have
+</span><span class="c"># been eventually created by automake
+</span><span class="c"></span><span class="nb">file</span> <span class="p">(</span><span class="s">MAKE_DIRECTORY</span> <span class="s2">&#34;${CMAKE_CURRENT_BINARY_DIR}/${IPERF_DIRECTORY_NAME}/lib&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">file</span> <span class="p">(</span><span class="s">MAKE_DIRECTORY</span> <span class="s2">&#34;${CMAKE_CURRENT_BINARY_DIR}/${IPERF_DIRECTORY_NAME}/include&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="c"># Pass the headers and libraries created by automake to dependent targets for linking and/or inclusion.
+</span><span class="c"></span><span class="nb">target_include_directories</span><span class="p">(</span><span class="s">iperf</span> <span class="s">INTERFACE</span> <span class="o">${</span><span class="nv">CMAKE_CURRENT_BINARY_DIR</span><span class="o">}</span><span class="s">/</span><span class="o">${</span><span class="nv">IPERF_DIRECTORY_NAME</span><span class="o">}</span><span class="s">/include</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">target_link_libraries</span><span class="p">(</span><span class="s">iperf</span> <span class="s">INTERFACE</span> <span class="s2">&#34;${CMAKE_CURRENT_BINARY_DIR}/${IPERF_DIRECTORY_NAME}/lib/libiperf.a&#34;</span><span class="p">)</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="c"># Make sure the iperf interface library target triggers the autotools build.
+</span><span class="c"></span><span class="nb">add_dependencies</span><span class="p">(</span><span class="s">iperf</span> <span class="s">iperf_autotools</span><span class="p">)</span><span class="err">
+</span><span class="err">
+</span><span class="err"></span><span class="c"># Add extra includes based on the current structure of the wrapper codebase.
+</span><span class="c"># This somewhat breaks the API encapsulation.
+</span><span class="c"># TODO(matt9j) Should ultimately not be needed if the API interface were used cleanly
+</span><span class="c"></span><span class="nb">target_include_directories</span><span class="p">(</span><span class="s">iperf</span> <span class="s">INTERFACE</span> <span class="o">${</span><span class="nv">CMAKE_CURRENT_SOURCE_DIR</span><span class="o">}</span><span class="s">/</span><span class="o">${</span><span class="nv">IPERF_DIRECTORY_NAME</span><span class="o">}</span><span class="s">/src</span><span class="p">)</span><span class="err">
+</span><span class="err"></span><span class="nb">target_include_directories</span><span class="p">(</span><span class="s">iperf</span> <span class="s">INTERFACE</span> <span class="o">${</span><span class="nv">CMAKE_CURRENT_BINARY_DIR</span><span class="o">}</span><span class="s">/</span><span class="o">${</span><span class="nv">IPERF_DIRECTORY_NAME</span><span class="o">}</span><span class="s">/src</span><span class="p">)</span><span class="err">
+</span><span class="err">
 </span></code></pre></div><p>This current implementation has the downside of specifying the Android ABI
 manually, but I&rsquo;m hoping it will become obsolete as the Android NDK support
 built into CMake improves with CMake 3.21. For now though this has allowed us to
@@ -359,253 +431,277 @@ including both debug and release versions with symbols to allow integrated
 debugging in Android Studio! Hopefully it can be useful to you as well, and can
 save you the few days I spent learning to untangle the Android native build
 process!</p>
-<h2 id="hindsight">Hindsight</h2>
+<h2 id="hindsight">Hindsight <a class="heading-anchor" href="#hindsight" aria-label="Anchor">#</a></h2>
 <p>Looking back on this work and the integration struggles we overcame (to be
 detailed in a future post), I&rsquo;m quite intrigued by the easy crossplatform builds
 promised by Golang, and am curious if <a href="https://github.com/microsoft/ethr">ethr</a>
 (Golang, MIT) might have been the better choice. If anyone has experience
 integrating ethr into a high-level application I would love to hear how it went!</p>
 
+    </section>
+    <footer class="pt-8">
+      
+  <div class="flex">
+    
+      <img
+        class="w-24 h-24 !mt-0 !mb-0 mr-4 rounded-full"
+        width="96"
+        height="96"
+        alt="Author"
+        src="/img/main/profile-square.jpg"
+      />
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] leading-3 text-neutral-500 dark:text-neutral-400 uppercase">
+          Author
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          Matt Johnson
+        </div>
+      
+      
+        <div class="text-sm text-neutral-700 dark:text-neutral-400">A networking researcher interested in the challenges of infrastructure at the end of the tail of connectivity</div>
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://github.com/matt9j"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          >
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+  </span>
+
+</a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://scholar.google.com/citations?user=cTILBksAAAAJ&amp;hl=en"
+          target="_blank"
+          aria-label="GoogleScholar"
+          rel="me noopener noreferrer"
+          >
+
+</a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://keybase.io/matt9j"
+          target="_blank"
+          aria-label="Keybase"
+          rel="me noopener noreferrer"
+          >
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="keybase" class="svg-inline--fa fa-keybase fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M286.17 419a18 18 0 1 0 18 18 18 18 0 0 0-18-18zm111.92-147.6c-9.5-14.62-39.37-52.45-87.26-73.71q-9.1-4.06-18.38-7.27a78.43 78.43 0 0 0-47.88-104.13c-12.41-4.1-23.33-6-32.41-5.77-.6-2-1.89-11 9.4-35L198.66 32l-5.48 7.56c-8.69 12.06-16.92 23.55-24.34 34.89a51 51 0 0 0-8.29-1.25c-41.53-2.45-39-2.33-41.06-2.33-50.61 0-50.75 52.12-50.75 45.88l-2.36 36.68c-1.61 27 19.75 50.21 47.63 51.85l8.93.54a214 214 0 0 0-46.29 35.54C14 304.66 14 374 14 429.77v33.64l23.32-29.8a148.6 148.6 0 0 0 14.56 37.56c5.78 10.13 14.87 9.45 19.64 7.33 4.21-1.87 10-6.92 3.75-20.11a178.29 178.29 0 0 1-15.76-53.13l46.82-59.83-24.66 74.11c58.23-42.4 157.38-61.76 236.25-38.59 34.2 10.05 67.45.69 84.74-23.84.72-1 1.2-2.16 1.85-3.22a156.09 156.09 0 0 1 2.8 28.43c0 23.3-3.69 52.93-14.88 81.64-2.52 6.46 1.76 14.5 8.6 15.74 7.42 1.57 15.33-3.1 18.37-11.15C429 443 434 414 434 382.32c0-38.58-13-77.46-35.91-110.92zM142.37 128.58l-15.7-.93-1.39 21.79 13.13.78a93 93 0 0 0 .32 19.57l-22.38-1.34a12.28 12.28 0 0 1-11.76-12.79L107 119c1-12.17 13.87-11.27 13.26-11.32l29.11 1.73a144.35 144.35 0 0 0-7 19.17zm148.42 172.18a10.51 10.51 0 0 1-14.35-1.39l-9.68-11.49-34.42 27a8.09 8.09 0 0 1-11.13-1.08l-15.78-18.64a7.38 7.38 0 0 1 1.34-10.34l34.57-27.18-14.14-16.74-17.09 13.45a7.75 7.75 0 0 1-10.59-1s-3.72-4.42-3.8-4.53a7.38 7.38 0 0 1 1.37-10.34L214 225.19s-18.51-22-18.6-22.14a9.56 9.56 0 0 1 1.74-13.42 10.38 10.38 0 0 1 14.3 1.37l81.09 96.32a9.58 9.58 0 0 1-1.74 13.44zM187.44 419a18 18 0 1 0 18 18 18 18 0 0 0-18-18z"></path></svg>
+  </span>
+
+</a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://linkedin.com/in/matt9j"
+          target="_blank"
+          aria-label="Linkedin"
+          rel="me noopener noreferrer"
+          >
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+  </span>
+
+</a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://orcid.org/0000-0003-2095-0225"
+          target="_blank"
+          aria-label="Orcid"
+          rel="me noopener noreferrer"
+          >
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="orcid" class="svg-inline--fa fa-orcid" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M294.8 188.2h-45.92V342h47.47c67.62 0 83.12-51.34 83.12-76.91 0-41.64-26.54-76.9-84.67-76.9zM256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm-80.79 360.8h-29.84v-207.5h29.84zm-14.92-231.1a19.57 19.57 0 1 1 19.57-19.57 19.64 19.64 0 0 1 -19.57 19.57zM300 369h-81V161.3h80.6c76.73 0 110.4 54.83 110.4 103.8C410 318.4 368.4 369 300 369z"></path></svg>
+  </span>
+
+</a
+        >
+      
+    
+      
+        <a
+          class="px-1 hover:text-primary-700 dark:hover:text-primary-400"
+          href="https://twitter.com/matt9j"
+          target="_blank"
+          aria-label="Twitter"
+          rel="me noopener noreferrer"
+          >
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+  </span>
+
+</a
+        >
+      
+    
   </div>
-  <footer>
-    <ul class="stats">
-  
-    
-    
-      <li class="categories">
-        <ul>
-          
-            
-            <li><a class="article-category-link" href="https://matt9j.net/categories/software-development">software-development</a></li>
-          
-        </ul>
-      </li>
-    
-  
-  
-    
-    
-      <li class="tags">
-        <ul>
-          
-            
-            <li><a class="article-category-link" href="https://matt9j.net/tags/android">android</a></li>
-          
-            
-            <li><a class="article-category-link" href="https://matt9j.net/tags/seattle-community-network">seattle-community-network</a></li>
-          
-            
-            <li><a class="article-category-link" href="https://matt9j.net/tags/networks">networks</a></li>
-          
-            
-            <li><a class="article-category-link" href="https://matt9j.net/tags/ictd">ICTD</a></li>
-          
-        </ul>
-      </li>
-    
-  
-</ul>
 
-  </footer>
-</article>
-
-
-<div class="pagination">
-  
-    <a href="/posts/rethinking-congestion/" class="button"><div class="previous"><div>Rethinking network congestion (Especially in community networks)</div></div></a>
-  
-  
-    <a href="/posts/integrating-iperf/" class="button"><div class="next"><div>Integrating Asyncronous iperf3 Tests in Android 11&#43;</div></div></a>
-  
 </div>
-
-
-      </main>
-      <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent posts</h1>
-      </header>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="/posts/integrating-iperf/">Integrating Asyncronous iperf3 Tests in Android 11&#43;</a></h1>
-          <time class="published" datetime="">September 30, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="/posts/building-iperf/">Building iperf3 For Android 11&#43;</a></h1>
-          <time class="published" datetime="">September 17, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="/posts/rethinking-congestion/">Rethinking network congestion (Especially in community networks)</a></h1>
-          <time class="published" datetime="">January 27, 2021</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="/posts/blm/">Black Lives Matter</a></h1>
-          <time class="published" datetime="">September 25, 2020</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h1><a href="/posts/hello-world/">Hello World</a></h1>
-          <time class="published" datetime="">January 29, 2020</time>
-        </header>
-      </article>
-      
-      
-        <a href="/posts/" class="button">See more</a>
-      
-    </section>
-  
-
-  
-    
-      <section id="categories">
-        <header>
-          <h1><a href="/categories">Categories</a></h1>
-        </header>
-        <ul>
-          
-            
-          
-          
-          <li>
-            
-              <a href="/categories/recipes/">recipes<span class="count">9</span></a>
-            
-          
-          <li>
-            
-              <a href="/categories/publications/">publications<span class="count">8</span></a>
-            
-          
-          <li>
-            
-              <a href="/categories/cellular/">cellular<span class="count">5</span></a>
-            
-          
-          <li>
-            
-              <a href="/categories/software-development/">software-development<span class="count">3</span></a>
-            
-          
-          <li>
-            
-              <a href="/categories/personal/">personal<span class="count">1</span></a>
-            
-          
-          </li>
-        </ul>
-      </section>
-    
-  
-
-  
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>Currently a grad student at the University of Washington in the ICTD Lab...</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
-</section>
-
-      <footer id="site-footer">
-  
-      <ul class="socnet-icons">
-        
-
-        <li><a href="//github.com/matt9j" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
-
-
-
-
-
-
-
-
-
-
-
-<li><a href="//linkedin.com/in/matt9j" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li><a href="//twitter.com/matt9j" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
-
-
-
-
-
-<li><a href="//scholar.google.com/citations?user=cTILBksAAAAJ" target="_blank" rel="noopener" title="Google Scholar"><i class="ai ai-google-scholar"></i></a></li>
-<li><a href="//orcid.org/0000-0003-2095-0225" target="_blank" rel="noopener" title="ORCID"><i class="ai ai-orcid"></i></a></li>
-
-<li><a href="//keybase.io/matt9j" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
-
-
-
-      </ul>
-  
-  <p class="copyright">
-    
-      &copy; 2021
-      
-        matt9j:Matt Johnson
-      
-    . <br>
-    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.88.1' target='_blank' rel='noopener'>Hugo</a>
-  </p>
-</footer>
-<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
-
-      <script src="/js/bundle.min.87ac6c6c289e975bd6bceeaae259519b76127189022e0c32bc07bd359c0d083a.js" integrity="sha256-h6xsbCiel1vWvO6q4llRm3YScYkCLgwyvAe9NZwNCDo="></script>
-    <script src="/js/add-on.js"></script>
     </div>
-  </body>
+  </div>
+
+
+      
+  
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    
+      
+        <a
+          class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
+          href="mailto:?body=https://matt9j.net/posts/building-iperf/&amp;subject=Building%20iperf3%20For%20Android%2011&#43;"
+          title="Send via email"
+          aria-label="Send via email"
+          >
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="at" class="svg-inline--fa fa-at fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C118.941 8 8 118.919 8 256c0 137.059 110.919 248 248 248 48.154 0 95.342-14.14 135.408-40.223 12.005-7.815 14.625-24.288 5.552-35.372l-10.177-12.433c-7.671-9.371-21.179-11.667-31.373-5.129C325.92 429.757 291.314 440 256 440c-101.458 0-184-82.542-184-184S154.542 72 256 72c100.139 0 184 57.619 184 160 0 38.786-21.093 79.742-58.17 83.693-17.349-.454-16.91-12.857-13.476-30.024l23.433-121.11C394.653 149.75 383.308 136 368.225 136h-44.981a13.518 13.518 0 0 0-13.432 11.993l-.01.092c-14.697-17.901-40.448-21.775-59.971-21.775-74.58 0-137.831 62.234-137.831 151.46 0 65.303 36.785 105.87 96 105.87 26.984 0 57.369-15.637 74.991-38.333 9.522 34.104 40.613 34.103 70.71 34.103C462.609 379.41 504 307.798 504 232 504 95.653 394.023 8 256 8zm-21.68 304.43c-22.249 0-36.07-15.623-36.07-40.771 0-44.993 30.779-72.729 58.63-72.729 22.292 0 35.601 15.241 35.601 40.77 0 45.061-33.875 72.73-58.161 72.73z"></path></svg>
+  </span>
+
+</a
+        >
+      
+    
+  </section>
+
+
+      
+  
+    <div class="pt-8 article-pagination">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex" href="/posts/integrating-iperf/">
+              <span class="mr-3 article-pagination-direction">&larr;</span>
+              <span class="flex flex-col">
+                <span class="article-pagination-title mt-[0.1rem] leading-6"
+                  >Integrating Asyncronous iperf3 Tests in Android 11+</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2021-09-30 00:00:00 &#43;0000 UTC">30 September 2021</time>
+
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right" href="/posts/rethinking-congestion/">
+              <span class="flex flex-col">
+                <span class="article-pagination-title mt-[0.1rem] leading-6"
+                  >Rethinking network congestion (Especially in community networks)</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2021-01-27 00:00:00 &#43;0000 UTC">27 January 2021</time>
+
+                  
+                </span>
+              </span>
+              <span class="ml-3 article-pagination-direction">&rarr;</span>
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    </footer>
+    
+  </article>
+</main><footer class="py-10">
+  
+  
+  <div class="flex justify-between">
+    <div>
+      
+      <p class="text-sm text-neutral-500 dark:text-neutral-400">
+          &copy;
+          2022
+          Matt Johnson
+      </p>
+      
+      
+        <p class="text-xs text-neutral-400 dark:text-neutral-600">
+          
+          
+          Powered by <a class="hover:underline hover:underline-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:underline-primary-400 hover:text-primary-500" href="https://github.com/matt9j/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    
+    
+      <div class="text-sm cursor-pointer text-neutral-400 dark:text-neutral-500">
+        <button
+          id="dark-toggle"
+          onclick="setPreferredAppearance('dark');"
+          oncontextmenu="setPreferredAppearance('default'); return false;"
+          class="inline px-2 py-1 border rounded-md border-neutral-200 dark:hidden hover:text-primary-500 hover:border-primary-400"
+          title="Switch to dark appearance"
+        >
+          
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" class="svg-inline--fa fa-moon fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path></svg>
+  </span>
+
+
+        </button>
+        <button
+          id="light-toggle"
+          onclick="setPreferredAppearance('light');"
+          oncontextmenu="setPreferredAppearance('default'); return false;"
+          class="hidden px-2 py-1 border rounded-md cursor-pointer dark:inline border-neutral-700 hover:text-primary-400 hover:border-primary-500"
+          title="Switch to light appearance"
+        >
+          
+
+  <span class="relative inline-block align-text-bottom icon">
+    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sun" class="svg-inline--fa fa-sun fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path></svg>
+  </span>
+
+
+        </button>
+      </div>
+    
+  </div>
+  
+  
+</footer>
+</body>
 </html>

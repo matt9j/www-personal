@@ -5,7 +5,7 @@
     <link>https://matt9j.net/categories/publications/</link>
     <description>Recent content in publications on matt9j:Matt Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/categories/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Network Capacity as Common Pool Resource: Community-Based Congestion Management in a Community Network</title>
@@ -13,7 +13,7 @@
       <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/cscw21/</guid>
-      <description>abstract: Congestion control mechanisms, by which network users share constrained capacity on Internet links, are heavily studied in computer science. Such mechanisms are traditionally automated, assuming that users do not wish to be involved in addressing congestion. However, in community-owned and operated networks, users have control over daily operational choices. We explore the design of community-based congestion policies and mechanisms, through the lens of network capacity as a Common Pool Resource (CPR).</description>
+      <description>Published at CSCW 2021</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/www21/</guid>
-      <description>abstract: While only generating a minuscule percentage of global traffic, largely lost in the noise of large-scale analyses, remote rural networks are the physical frontier of the Internet today. Through tight integration with a local operator’s infrastructure, we gather a unique dataset to characterize and report a year of interaction between finances, utilization, and performance of a novel, remote, data-only Community LTE Network in Bokondini, Indonesia. With visibility to drill down to individual users, we find use highly unbalanced and the network supported by only a handful of relatively heavy consumers.</description>
+      <description>Published at The Web Conference (WWW) 2021</description>
     </item>
     
     <item>
@@ -31,7 +31,16 @@
       <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/mobicom19/</guid>
-      <description>abstract: In this paper we introduce CoLTE, a solution for LTE-based community networks. CoLTE is a lightweight, Internet-only LTE core network (EPC) designed to facilitate the deployment and operation of small-scale, community owned and operated LTE networks in rural areas with limited and unreliable backhaul. The key differentiator of CoLTE, when compared to existing LTE solutions, is that in CoLTE the EPC is designed to be located in the field and deployed alongside a small number of cellular radios (eNodeBs), as opposed to the centralized model seen in large-scale telecom networks.</description>
+      <description>Published at MobiCom 2019</description>
+    </item>
+    
+    <item>
+      <title>Trust and Technology Repair Infrastructures in the Remote Rural Philippines: Navigating Urban-Rural Seams</title>
+      <link>https://matt9j.net/publications/cscw2019/</link>
+      <pubDate>Fri, 01 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/publications/cscw2019/</guid>
+      <description>Published at CSCW 2019</description>
     </item>
     
     <item>
@@ -40,7 +49,7 @@
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/nsdi19/</guid>
-      <description>abstract: Hundreds of millions of people still live beyond the coverage of basic mobile connectivity, primarily in rural areas with low population density. Mobile-network operators (MNOs) traditionally struggle to justify expansion into these rural areas due to the high infrastructure costs necessary to provide service. Community cellular networks, networks built &amp;ldquo;by and for&amp;rdquo; the people they serve, represent an alternative model that, to an extent, bypasses these business case limitations and enables sustainable rural coverage.</description>
+      <description>Published at NSDI 2019</description>
     </item>
     
     <item>
@@ -49,7 +58,7 @@
       <pubDate>Thu, 15 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/hotnets2018/</guid>
-      <description>abstract: The radio interfaces and network architectures of WiFi and cellular systems are converging along many dimensions. While both systems are largely adopting the centralized architecture of traditional cellular deployments, this design comes with fundamental disadvantages that limit how these networks grow and develop. As a response, we present Distributed LTE (dLTE), an architecture offering the high radio performance of licensed and coordinated waveforms as well as the openness to organic expansion and growth of traditional WiFi.</description>
+      <description>Published at HotNets 2018</description>
     </item>
     
     <item>
@@ -58,7 +67,7 @@
       <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/chi2018/</guid>
-      <description>abstract: Repair and maintenance requirements limit the successful operation of rural infrastructure. Current best practices are centralized management, which requires travel from urban areas and is prohibitively expensive, or intensively training community members, which limits scaling. We explore an alternative model: crowdsourcing repair from the community. Leveraging a Community Cellular Network in the remote Philippines, we sent SMS to all active network subscribers (n = 63) requesting technical support. From the pool of physical respondents, we explored their ability to repair through mock failures and conducted semi-structured interviews about their experiences with repair.</description>
+      <description>Published at CHI 2018</description>
     </item>
     
     <item>
@@ -67,16 +76,7 @@
       <pubDate>Thu, 22 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/limits2017/</guid>
-      <description>abstract: In a setting of economic and infrastructural collapse, the inability to manufacture and maintain computing resources will be an enormous limitation on the continued use of technology. The concept of &amp;ldquo;rot&amp;rdquo; exists for both hardware and software, referring to a slow loss of functionality over time. Given a desire to maintain technological capability, we raise a variety of questions about technology use in such a scenario. How long will current hardware last through repair, robust construction, and good maintenance practices?</description>
-    </item>
-    
-    <item>
-      <title>Trust and Technology Repair Infrastructures in the Remote Rural Philippines: Navigating Urban-Rural Seams</title>
-      <link>https://matt9j.net/publications/cscw2019/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://matt9j.net/publications/cscw2019/</guid>
-      <description>abstract: This paper analyzes the processes and challenges of technology repair in remote, low-income areas far from standard ICT repair infrastructure. Our sites of study are the fishing and farming villages of Dibut, Diotorin, and Dikapinisan in Aurora Province, Philippines, located in coastal coves against a mountain range. Residents are geographically isolated from urban areas, with the nearest peri-urban center of Baler a boat trip of several hours away, infeasible in some sea conditions.</description>
+      <description>Published at LIMITS 2017</description>
     </item>
     
   </channel>

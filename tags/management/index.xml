@@ -5,7 +5,7 @@
     <link>https://matt9j.net/tags/management/</link>
     <description>Recent content in management on matt9j:Matt Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Tue, 26 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/tags/management/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Scaling community cellular networks with community cellular manager</title>
@@ -13,7 +13,7 @@
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/nsdi19/</guid>
-      <description>abstract: Hundreds of millions of people still live beyond the coverage of basic mobile connectivity, primarily in rural areas with low population density. Mobile-network operators (MNOs) traditionally struggle to justify expansion into these rural areas due to the high infrastructure costs necessary to provide service. Community cellular networks, networks built &amp;ldquo;by and for&amp;rdquo; the people they serve, represent an alternative model that, to an extent, bypasses these business case limitations and enables sustainable rural coverage.</description>
+      <description>Published at NSDI 2019</description>
     </item>
     
   </channel>

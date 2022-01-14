@@ -5,7 +5,7 @@
     <link>https://matt9j.net/tags/internet-access/</link>
     <description>Recent content in Internet Access on matt9j:Matt Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Sat, 21 Apr 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/tags/internet-access/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Crowdsourcing Rural Network Maintenance and Repair via Network Messaging</title>
@@ -13,7 +13,7 @@
       <pubDate>Sat, 21 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/chi2018/</guid>
-      <description>abstract: Repair and maintenance requirements limit the successful operation of rural infrastructure. Current best practices are centralized management, which requires travel from urban areas and is prohibitively expensive, or intensively training community members, which limits scaling. We explore an alternative model: crowdsourcing repair from the community. Leveraging a Community Cellular Network in the remote Philippines, we sent SMS to all active network subscribers (n = 63) requesting technical support. From the pool of physical respondents, we explored their ability to repair through mock failures and conducted semi-structured interviews about their experiences with repair.</description>
+      <description>Published at CHI 2018</description>
     </item>
     
   </channel>

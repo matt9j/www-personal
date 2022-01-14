@@ -5,7 +5,7 @@
     <link>https://matt9j.net/tags/android/</link>
     <description>Recent content in android on matt9j:Matt Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/tags/android/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Integrating Asyncronous iperf3 Tests in Android 11&#43;</title>
@@ -13,8 +13,7 @@
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/posts/integrating-iperf/</guid>
-      <description>Preamble I&amp;rsquo;ve been helping out the Seattle Community Network (SCN), with an ongoing project to build a crowdsourced network performance measurement application for Android. While understanding modern network performance, particularly wireless networks, is extremely subtle, &amp;ldquo;speedtests&amp;rdquo; offer a crude yet popular way to measure a network&amp;rsquo;s performance, and are easy for general audiences to interpret.
-Unsurprisingly, SCN sought to include a &amp;ldquo;speedtest&amp;rdquo; capability in their app! A team of an undergraduate researcher (Zhennan(John) Zhou) and a volunteer high school student (Ashwin Chintalapati) organized by Esther Jang got started on the project, and started integrating iperf3 (C, BSD-3 into the application.</description>
+      <description>Preamble # I&amp;rsquo;ve been helping out the Seattle Community Network (SCN), with an ongoing project to build a crowdsourced network performance measurement application for Android.</description>
     </item>
     
     <item>
@@ -23,8 +22,7 @@ Unsurprisingly, SCN sought to include a &amp;ldquo;speedtest&amp;rdquo; capabili
       <pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/posts/building-iperf/</guid>
-      <description>Preamble I&amp;rsquo;ve been helping out the Seattle Community Network (SCN), with an ongoing project to build a crowdsourced network performance measurement application for Android. While understanding modern network performance, particularly wireless networks, is extremely subtle, &amp;ldquo;speedtests&amp;rdquo; offer a crude yet popular way to measure a network&amp;rsquo;s performance, and are easy for general audiences to interpret.
-Unsurprisingly, SCN sought to include a &amp;ldquo;speedtest&amp;rdquo; capability in their app! A team of an undergraduate researcher (Zhennan(John) Zhou) and a volunteer high school student (Ashwin Chintalapati) organized by Esther Jang got started on the project, and started integrating iperf3 (C, BSD-3 into the application.</description>
+      <description>Preamble # I&amp;rsquo;ve been helping out the Seattle Community Network (SCN), with an ongoing project to build a crowdsourced network performance measurement application for Android.</description>
     </item>
     
   </channel>

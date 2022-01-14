@@ -5,7 +5,7 @@
     <link>https://matt9j.net/tags/community-cellular/</link>
     <description>Recent content in Community Cellular on matt9j:Matt Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 18 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/tags/community-cellular/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Whale Watching in Inland Indonesia: Analyzing a Small, Remote, Internet-Based Community Cellular Network</title>
@@ -13,7 +13,7 @@
       <pubDate>Thu, 18 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/www21/</guid>
-      <description>abstract: While only generating a minuscule percentage of global traffic, largely lost in the noise of large-scale analyses, remote rural networks are the physical frontier of the Internet today. Through tight integration with a local operator’s infrastructure, we gather a unique dataset to characterize and report a year of interaction between finances, utilization, and performance of a novel, remote, data-only Community LTE Network in Bokondini, Indonesia. With visibility to drill down to individual users, we find use highly unbalanced and the network supported by only a handful of relatively heavy consumers.</description>
+      <description>Published at The Web Conference (WWW) 2021</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 11 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/mobicom19/</guid>
-      <description>abstract: In this paper we introduce CoLTE, a solution for LTE-based community networks. CoLTE is a lightweight, Internet-only LTE core network (EPC) designed to facilitate the deployment and operation of small-scale, community owned and operated LTE networks in rural areas with limited and unreliable backhaul. The key differentiator of CoLTE, when compared to existing LTE solutions, is that in CoLTE the EPC is designed to be located in the field and deployed alongside a small number of cellular radios (eNodeBs), as opposed to the centralized model seen in large-scale telecom networks.</description>
+      <description>Published at MobiCom 2019</description>
     </item>
     
     <item>
@@ -31,7 +31,7 @@
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/publications/nsdi19/</guid>
-      <description>abstract: Hundreds of millions of people still live beyond the coverage of basic mobile connectivity, primarily in rural areas with low population density. Mobile-network operators (MNOs) traditionally struggle to justify expansion into these rural areas due to the high infrastructure costs necessary to provide service. Community cellular networks, networks built &amp;ldquo;by and for&amp;rdquo; the people they serve, represent an alternative model that, to an extent, bypasses these business case limitations and enables sustainable rural coverage.</description>
+      <description>Published at NSDI 2019</description>
     </item>
     
   </channel>

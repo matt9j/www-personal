@@ -5,7 +5,7 @@
     <link>https://matt9j.net/posts/</link>
     <description>Recent content in Posts on matt9j:Matt Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Integrating Asyncronous iperf3 Tests in Android 11&#43;</title>
@@ -13,8 +13,7 @@
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/posts/integrating-iperf/</guid>
-      <description>Preamble I&amp;rsquo;ve been helping out the Seattle Community Network (SCN), with an ongoing project to build a crowdsourced network performance measurement application for Android. While understanding modern network performance, particularly wireless networks, is extremely subtle, &amp;ldquo;speedtests&amp;rdquo; offer a crude yet popular way to measure a network&amp;rsquo;s performance, and are easy for general audiences to interpret.
-Unsurprisingly, SCN sought to include a &amp;ldquo;speedtest&amp;rdquo; capability in their app! A team of an undergraduate researcher (Zhennan(John) Zhou) and a volunteer high school student (Ashwin Chintalapati) organized by Esther Jang got started on the project, and started integrating iperf3 (C, BSD-3 into the application.</description>
+      <description>Preamble # I&amp;rsquo;ve been helping out the Seattle Community Network (SCN), with an ongoing project to build a crowdsourced network performance measurement application for Android.</description>
     </item>
     
     <item>
@@ -23,8 +22,7 @@ Unsurprisingly, SCN sought to include a &amp;ldquo;speedtest&amp;rdquo; capabili
       <pubDate>Fri, 17 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/posts/building-iperf/</guid>
-      <description>Preamble I&amp;rsquo;ve been helping out the Seattle Community Network (SCN), with an ongoing project to build a crowdsourced network performance measurement application for Android. While understanding modern network performance, particularly wireless networks, is extremely subtle, &amp;ldquo;speedtests&amp;rdquo; offer a crude yet popular way to measure a network&amp;rsquo;s performance, and are easy for general audiences to interpret.
-Unsurprisingly, SCN sought to include a &amp;ldquo;speedtest&amp;rdquo; capability in their app! A team of an undergraduate researcher (Zhennan(John) Zhou) and a volunteer high school student (Ashwin Chintalapati) organized by Esther Jang got started on the project, and started integrating iperf3 (C, BSD-3 into the application.</description>
+      <description>Preamble # I&amp;rsquo;ve been helping out the Seattle Community Network (SCN), with an ongoing project to build a crowdsourced network performance measurement application for Android.</description>
     </item>
     
     <item>
@@ -33,7 +31,7 @@ Unsurprisingly, SCN sought to include a &amp;ldquo;speedtest&amp;rdquo; capabili
       <pubDate>Wed, 27 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/posts/rethinking-congestion/</guid>
-      <description>What is congestion in a network anyway? A network link suffers from congestion when demand for the link’s resources exceeds the amount of service it can supply within some reasonable duration of time, resulting in data being dropped on the floor or delayed. Both the “resources” and “reasonable duration of time” are highly situational and vary by application and type of network.[^1] Ultimately this becomes “ugh, why is the WiFi so slow today!</description>
+      <description>What is congestion in a network anyway?</description>
     </item>
     
     <item>
@@ -42,7 +40,7 @@ Unsurprisingly, SCN sought to include a &amp;ldquo;speedtest&amp;rdquo; capabili
       <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/posts/blm/</guid>
-      <description>The fight to end systemic racism, particularly against my Black neighbors in the United States (my home), continues beyond the summer of 2020, beyond the 2020 election, and beyond a blog post. The Internet is a vast place, but in this corner I hope to make this undeniably clear. The injustice served to Breonna Taylor and Ahmaud Arbery this spring, to the many hundreds killed, and to millions of Black folks marginalized through systemic denial of opportunity in a country they helped build, is shameful.</description>
+      <description>The fight to end systemic racism, particularly against my Black neighbors in the United States (my home), continues beyond the summer of 2020, beyond the 2020 election, and beyond a blog post.</description>
     </item>
     
     <item>
@@ -51,8 +49,7 @@ Unsurprisingly, SCN sought to include a &amp;ldquo;speedtest&amp;rdquo; capabili
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/posts/hello-world/</guid>
-      <description>Over the last few months I&amp;rsquo;ve re-worked a lot of my own personal infrastructure, and learned a lot along the way. My ultimate goal will be to get all my infrastructure off of feed-based social media platforms and see how hard it is to recapture some of the magic of the young web, but of course that&amp;rsquo;s a long road ahead :)
-I&amp;rsquo;m excited today to have finally finished one step on that journey, modernizing my old manual site onto a framework built around markdown content and a static site generator (I went with Hugo since I have some golang experience, I&amp;rsquo;m a little afraid of node_modules, and of course it&amp;rsquo;s fast).</description>
+      <description>Over the last few months I&amp;rsquo;ve re-worked a lot of my own personal infrastructure, and learned a lot along the way.</description>
     </item>
     
   </channel>

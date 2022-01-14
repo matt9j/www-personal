@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://matt9j.net/sitemap.xml
