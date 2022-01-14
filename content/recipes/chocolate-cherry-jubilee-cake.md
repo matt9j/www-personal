@@ -3,6 +3,7 @@ title: "Chocolate Cherry Jubilee Cake"
 date: 2021-02-17
 draft: false
 description: "Something about the frosting..."
+summary: "Something about the frosting..."
 tags: ["recipe", "dessert"]
 categories: ["recipes"]
 ---

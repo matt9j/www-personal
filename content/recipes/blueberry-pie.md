@@ -3,6 +3,7 @@ title: "Ma' Johnson's Fresh Blueberry Pie"
 date: 2020-07-18
 draft: false
 description: "IMHO, the best pie ever"
+summary: "IMHO, the best pie ever"
 tags: [
     "recipe",
     "pie",

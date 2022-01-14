@@ -3,6 +3,7 @@ title: "Black Bean Dip"
 date: 2021-01-07
 draft: false
 description: "You won't be able to stop"
+summary: "You won't be able to stop"
 tags: [
     "recipe",
     "dip",

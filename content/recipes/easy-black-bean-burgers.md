@@ -3,6 +3,7 @@ title: "Super easy black bean burgers"
 date: 2021-01-08
 draft: false
 description: "A new favorite, and make good leftovers for future lunches!"
+summary: "A new favorite, and make good leftovers for future lunches!"
 tags: [
     "recipe",
     "vegetarian",

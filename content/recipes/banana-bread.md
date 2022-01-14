@@ -3,6 +3,7 @@ title: "Grandma Lonergan's Banana Bread"
 date: 2020-07-18
 draft: false
 description: "A cherished family banana bread recipe"
+summary: "A cherished family banana bread recipe"
 tags: [
     "recipe",
     "bread",
