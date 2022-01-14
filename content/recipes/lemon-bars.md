@@ -3,6 +3,7 @@ title: "Hybrid Lemon Bars"
 date: 2020-08-09
 draft: false
 description: "Tangy and delicious"
+summary: "Tangy and delicious"
 tags: [
     "recipe",
     "dessert",

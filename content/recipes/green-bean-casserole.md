@@ -3,6 +3,7 @@ title: "Green Bean Casserole"
 date: 2021-10-09
 draft: false
 description: "A soy-free alternative to ones with canned mushroom soup!"
+summary: "A soy-free alternative to ones with canned mushroom soup!"
 tags: ["recipe"]
 categories: ["recipes"]
 ---

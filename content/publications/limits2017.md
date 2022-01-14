@@ -4,6 +4,7 @@ date: 2017-06-22
 draft: false
 type: "publication"
 description: "Published at LIMITS 2017"
+summary: "Published at LIMITS 2017"
 tags: [
     "longevity",
     "hardware",

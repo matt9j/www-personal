@@ -1,6 +1,10 @@
 ---
 title: "Contact"
 type: "about"
+robots: "none"
+showDate: false
+showReadingTime: false
+sharingLinks: false
 ---
 
 ## e-mail
@@ -11,4 +15,4 @@ respond to all messages.
 ## Other Options
 You can also reach me via Twitter
 ([@matt9j](https://twitter.com/matt9j)) or other common services
-linked in the sidebar.
+linked in the footer.

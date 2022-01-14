@@ -3,6 +3,7 @@ title: "Spinach, Mushroom, and Pesto Lasagna"
 date: 2021-01-08
 draft: false
 description: "Delicious, and nightshade free!"
+summary: "Delicious, and nightshade free!"
 tags: [
     "recipe",
     "dinner",

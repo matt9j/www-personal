@@ -3,6 +3,7 @@ title: "Tahini (Sesame) Free Garlic Hummus"
 date: 2020-10-27
 draft: false
 description: "Allergy friendly, nutritious, and delicious"
+summary: "Allergy friendly, nutritious, and delicious"
 tags: [
     "recipe",
 ]

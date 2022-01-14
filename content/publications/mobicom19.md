@@ -4,6 +4,7 @@ date: 2019-11-11
 draft: false
 type: "publication"
 description: "Published at MobiCom 2019"
+summary: "Published at MobiCom 2019"
 tags: [
     "LTE",
     "Community Network",
