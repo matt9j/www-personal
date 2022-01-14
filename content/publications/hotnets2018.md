@@ -4,6 +4,7 @@ date: 2018-11-15
 draft: false
 type: "publication"
 description: "Published at HotNets 2018"
+summary: "Published at HotNets 2018"
 tags: [
     "LTE",
     "WiFi",

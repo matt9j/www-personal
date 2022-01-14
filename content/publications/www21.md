@@ -4,6 +4,7 @@ date: 2021-03-18
 draft: false
 type: "publication"
 description: "Published at The Web Conference (WWW) 2021"
+summary: "Published at The Web Conference (WWW) 2021"
 tags: [
     "LTE",
     "Bandwidth",

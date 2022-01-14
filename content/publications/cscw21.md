@@ -3,7 +3,8 @@ title: "Network Capacity as Common Pool Resource: Community-Based Congestion Man
 date: 2021-03-18
 draft: false
 type: "publication"
-description: "To Appear at CSCW 2021"
+description: "Published at CSCW 2021"
+summary: "Published at CSCW 2021"
 tags: [
     "Common Pool Resources",
     "LTE",
