@@ -1,13 +1,22 @@
+
+
+
+
+
 <!DOCTYPE html>
 <html
   lang="en-us"
-  class="dark"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
 ><head>
   <meta charset="utf-8" />
   
     <meta http-equiv="content-language" content="en-us" />
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="rgb(255,255,255)" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
   <title>Whale Watching in Inland Indonesia: Analyzing a Small, Remote, Internet-Based Community Cellular Network &middot; matt9j:Matt Johnson</title>
@@ -22,42 +31,25 @@
   
   
   
+  
+  
+  
+  
+  
+  
+  
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/schemes/congo.min.b48d6ba061dc77186a2524fb8aac5ac3823b2679a9299ca60325abbccc9c1764c884715f0ba24b4e2776cb3814df4af1f4c854b87207cd5d4c7a254da9b55751.css"
-    integrity="sha512-tI1roGHcdxhqJST7iqxaw4I7JnmpKZymAyWrvMycF2TIhHFfC6JLTid2yzgU30rx9MhUuHIHzV1MeiVNqbVXUQ=="
+    href="/css/main.bundle.min.2ca0a44f9db806817c273b488945a6fe2483777b2918234b7ea49fe8651f3a0c.css"
+    integrity="sha256-LKCkT524BoF8JztIiUWm/iSDd3spGCNLfqSf6GUfOgw="
   />
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/compiled/main.min.0616cd1037a5b5a117adb2a5811247073e87aa85bf90466b8597b7f950fea39c6daa6d034e80941fd15e7bd8c1f84e7bd1e2775064f5dfb08fd79622ef2deba3.css"
-    integrity="sha512-BhbNEDeltaEXrbKlgRJHBz6HqoW/kEZrhZe3&#43;VD&#43;o5xtqm0DToCUH9Fee9jB&#43;E570eJ3UGT137CP15Yi7y3row=="
-  />
+  <script type="text/javascript" src="/js/appearance.min.022d0ebc3b46a335eb1c7ef79b7f2de143d7cd5156d433638592ef1ce5f8554e.js" integrity="sha256-Ai0OvDtGozXrHH73m38t4UPXzVFW1DNjhZLvHOX4VU4="></script>
   
   
   
-    <script>
-      function loadPreferredAppearance() {
-        if (localStorage.preferredAppearance === "dark" || (!("preferredAppearance" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-          document.documentElement.classList.add("dark");
-        } else {
-          document.documentElement.classList.remove("dark");
-        }
-      }
-      function setPreferredAppearance(scheme) {
-        if (scheme == "default") {
-          localStorage.removeItem("preferredAppearance");
-        } else {
-          localStorage.preferredAppearance = scheme;
-        }
-        loadPreferredAppearance();
-      }
-      loadPreferredAppearance();
-      window.matchMedia("(prefers-color-scheme: dark)").addListener(loadPreferredAppearance);
-    </script>
   
   
   
@@ -79,45 +71,40 @@
 <meta property="article:published_time" content="2021-03-18T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-03-18T00:00:00+00:00" />
 
-
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Whale Watching in Inland Indonesia: Analyzing a Small, Remote, Internet-Based Community Cellular Network"/>
 <meta name="twitter:description" content="Published at The Web Conference (WWW) 2021"/>
 
   
   <script type="application/ld+json">
-  {
+  [{
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
     "articleSection": "",
     "name": "Whale Watching in Inland Indonesia: Analyzing a Small, Remote, Internet-Based Community Cellular Network",
     "headline": "Whale Watching in Inland Indonesia: Analyzing a Small, Remote, Internet-Based Community Cellular Network",
     "description": "Published at The Web Conference (WWW) 2021",
+    "abstract": "Published at The Web Conference (WWW) 2021",
     "inLanguage": "en-us",
+    "url" : "https:\/\/matt9j.net\/publications\/www21\/",
     "author" : {
       "@type": "Person",
       "name": "Matt Johnson"
     },
-    "creator" : {
-      "@type": "Person",
-      "name": "Matt Johnson"
-    },
-    "copyrightHolder": "Matt Johnson",
     "copyrightYear": "2021",
     "dateCreated": "2021-03-18T00:00:00\u002b00:00",
     "datePublished": "2021-03-18T00:00:00\u002b00:00",
+    
     "dateModified": "2021-03-18T00:00:00\u002b00:00",
-    "url" : "https:\/\/matt9j.net\/publications\/www21\/",
+    
     "keywords": ["LTE","Bandwidth","Community Network","Community Cellular","Measurement","ICTD"],
+    
+    "mainEntityOfPage": "true",
     "wordCount": "256"
-  }
+  }]
   </script>
 
 
-  
-  
-    <meta name="generator" content="Hugo 0.91.2" />
-  
   
   <meta name="author" content="Matt Johnson" />
   
@@ -153,91 +140,152 @@
   
 </head>
 <body
-    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"
-  ><header
-  class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-900 dark:text-neutral"
->
-  
-  <div>
-    
+    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
       <a
-        class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
-        rel="me"
-        href="/"
-        >matt9j:Matt Johnson</a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="font-bold pe-2 text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
       >
-  </div>
-  
-  
-    <nav>
-      <ul class="flex flex-col list-none sm:flex-row">
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral print:hidden sm:py-10">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >matt9j:Matt Johnson</a
+  >
+
+      
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col ltr:text-right rtl:text-left sm:flex-row">
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
-            <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
-              href="/posts/"
-              title="Posts"
-              >Posts</a
-            >
-          </li>
-        
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
-            <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
-              href="/publications/"
-              title=""
-              >Publications</a
-            >
-          </li>
-        
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
-            <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
-              href="/recipes/"
-              title=""
-              >Recipes</a
-            >
-          </li>
-        
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
-            <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
-              href="/categories/"
-              title="Categories"
-              >Categories</a
-            >
-          </li>
-        
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
-            <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
-              href="/contact/"
-              title="Contact"
-              >Contact</a
-            >
-          </li>
-        
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
-            <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
-              href="/about/"
-              title="About Me"
-              >About Me</a
-            >
-          </li>
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/posts/"
+                  title="Posts"
+                  
+                  >
+                    <span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Posts</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/publications/"
+                  title=""
+                  
+                  >
+                    <span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Publications</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/recipes/"
+                  title=""
+                  
+                  >
+                    <span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Recipes</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/categories/"
+                  title="Categories"
+                  
+                  >
+                    <span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Categories</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/contact/"
+                  title="Contact"
+                  
+                  >
+                    <span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Contact</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/about/"
+                  title="About Me"
+                  
+                  >
+                    <span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >About Me</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
         
       </ul>
-    </nav>
-  
+    
+  </nav>
 </header>
-<main class="flex-grow">
-  <article class="max-w-prose">
-    <header>
+
+    
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
         Whale Watching in Inland Indonesia: Analyzing a Small, Remote, Internet-Based Community Cellular Network
       </h1>
-      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400">
+      <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
 
 
@@ -262,23 +310,30 @@
 
   
 
+  
 
-  <div class="flex flex-row items-center">
+
+  <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2021-03-18 00:00:00 &#43;0000 UTC">18 March 2021</time>
-
+      <time datetime="2021-03-18 00:00:00 &#43;0000 UTC">March 18, 2021</time>
     
 
     
     
   </div>
 
+  
+  
+
 
       </div>
+      
     </header>
-    <section class="prose dark:prose-light">
-      <h4 id="abstract">abstract: <a class="heading-anchor" href="#abstract" aria-label="Anchor">#</a></h4>
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      <div class="min-w-0 min-h-0 max-w-prose grow">
+        <h4 id="abstract" class="relative group">abstract: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#abstract" aria-label="Anchor">#</a></span></h4>
 <p>While only generating a minuscule percentage of global traffic, largely lost in
 the noise of large-scale analyses, remote rural networks are the physical
 frontier of the Internet today. Through tight integration with a local
@@ -295,21 +350,34 @@ WhatsApp comprise a relatively large percentage of traffic consistently across
 both heavy and light users. Our analysis shows that Internet-only Community
 Cellular Networks can be profitable despite most users spending less than $1
 USD/day, and offers insights into the unique properties of these networks.</p>
-<h4 id="cite">cite: <a class="heading-anchor" href="#cite" aria-label="Anchor">#</a></h4>
+<h4 id="cite" class="relative group">cite: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#cite" aria-label="Anchor">#</a></span></h4>
 <p>Matthew Johnson, Jenny Liang, Michelle X. Lin, Sudheesh Singanamalla,
 and Kurtis Heimerl. 2021. Whale Watching in Inland Indonesia: Analyzing a
 Small, Remote, Internet-Based Community Cellular Network. In Proceedings
 of the Web Conference 2021 (WWW ’21), April 19–23, 2021, Ljubljana, Slovenia.
-ACM, New York, NY, USA, 12 pages. <a href="https://doi.org/10.1145/3442381.3449996">https://doi.org/10.1145/3442381.3449996</a></p>
-<h4 id="official-acm-download">Official ACM Download: <a class="heading-anchor" href="#official-acm-download" aria-label="Anchor">#</a></h4>
+ACM, New York, NY, USA, 12 pages. <a
+  href="https://doi.org/10.1145/3442381.3449996"
+  
+  target="_blank" rel="noreferrer noopener"
+>https://doi.org/10.1145/3442381.3449996</a></p>
+<h4 id="official-acm-download" class="relative group">Official ACM Download: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#official-acm-download" aria-label="Anchor">#</a></span></h4>
 <p>(Use this one)
-<a href="https://dl.acm.org/doi/10.1145/3442381.3449996?cid=99659180407">https://dl.acm.org/doi/10.1145/3442381.3449996?cid=99659180407</a></p>
-<h4 id="unofficial-pre-print-download">Unofficial pre-print download: <a class="heading-anchor" href="#unofficial-pre-print-download" aria-label="Anchor">#</a></h4>
+<a
+  href="https://dl.acm.org/doi/10.1145/3442381.3449996?cid=99659180407"
+  
+  target="_blank" rel="noreferrer noopener"
+>https://dl.acm.org/doi/10.1145/3442381.3449996?cid=99659180407</a></p>
+<h4 id="unofficial-pre-print-download" class="relative group">Unofficial pre-print download: <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#unofficial-pre-print-download" aria-label="Anchor">#</a></span></h4>
 <p>(Just in case)
-<a href="/papers/2021-whale-watching.pdf">2021-whale-watching.pdf</a></p>
+<a
+  href="/papers/2021-whale-watching.pdf"
+  
+  
+>2021-whale-watching.pdf</a></p>
 
+      </div>
     </section>
-    <footer class="pt-8">
+    <footer class="pt-8 max-w-prose print:hidden">
       
 
       
@@ -318,14 +386,17 @@ ACM, New York, NY, USA, 12 pages. <a href="https://doi.org/10.1145/3442381.34499
     
       
         <a
-          class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
+          class="m-1 inline-block min-w-[2.4rem] rounded bg-neutral-300 p-1 text-center text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
           href="mailto:?body=https://matt9j.net/publications/www21/&amp;subject=Whale%20Watching%20in%20Inland%20Indonesia:%20Analyzing%20a%20Small,%20Remote,%20Internet-Based%20Community%20Cellular%20Network"
           title="Send via email"
           aria-label="Send via email"
+          target="_blank"
+          rel="noopener noreferrer"
           >
 
   <span class="relative inline-block align-text-bottom icon">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="at" class="svg-inline--fa fa-at fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C118.941 8 8 118.919 8 256c0 137.059 110.919 248 248 248 48.154 0 95.342-14.14 135.408-40.223 12.005-7.815 14.625-24.288 5.552-35.372l-10.177-12.433c-7.671-9.371-21.179-11.667-31.373-5.129C325.92 429.757 291.314 440 256 440c-101.458 0-184-82.542-184-184S154.542 72 256 72c100.139 0 184 57.619 184 160 0 38.786-21.093 79.742-58.17 83.693-17.349-.454-16.91-12.857-13.476-30.024l23.433-121.11C394.653 149.75 383.308 136 368.225 136h-44.981a13.518 13.518 0 0 0-13.432 11.993l-.01.092c-14.697-17.901-40.448-21.775-59.971-21.775-74.58 0-137.831 62.234-137.831 151.46 0 65.303 36.785 105.87 96 105.87 26.984 0 57.369-15.637 74.991-38.333 9.522 34.104 40.613 34.103 70.71 34.103C462.609 379.41 504 307.798 504 232 504 95.653 394.023 8 256 8zm-21.68 304.43c-22.249 0-36.07-15.623-36.07-40.771 0-44.993 30.779-72.729 58.63-72.729 22.292 0 35.601 15.241 35.601 40.77 0 45.061-33.875 72.73-58.161 72.73z"></path></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>
+
   </span>
 
 </a
@@ -337,21 +408,28 @@ ACM, New York, NY, USA, 12 pages. <a href="https://doi.org/10.1145/3442381.34499
 
       
   
-    <div class="pt-8 article-pagination">
+    
+    
+    
+    <div class="pt-8">
       <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex" href="/publications/cscw21/">
-              <span class="mr-3 article-pagination-direction">&larr;</span>
+            <a class="group flex" href="/publications/mobicom19/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
               <span class="flex flex-col">
-                <span class="article-pagination-title mt-[0.1rem] leading-6"
-                  >Network Capacity as Common Pool Resource: Community-Based Congestion Management in a Community Network</span
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Experiences: Design, Implementation, and Deployment of CoLTE, a Community LTE Solution</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2021-03-18 00:00:00 &#43;0000 UTC">18 March 2021</time>
-
+                    <time datetime="2019-11-11 00:00:00 &#43;0000 UTC">November 11, 2019</time>
                   
                 </span>
               </span>
@@ -360,19 +438,23 @@ ACM, New York, NY, USA, 12 pages. <a href="https://doi.org/10.1145/3442381.34499
         </span>
         <span>
           
-            <a class="flex text-right" href="/publications/mobicom19/">
+            <a class="group flex text-right" href="/publications/cscw21/">
               <span class="flex flex-col">
-                <span class="article-pagination-title mt-[0.1rem] leading-6"
-                  >Experiences: Design, Implementation, and Deployment of CoLTE, a Community LTE Solution</span
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Network Capacity as Common Pool Resource: Community-Based Congestion Management in a Community Network</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2019-11-11 00:00:00 &#43;0000 UTC">11 November 2019</time>
-
+                    <time datetime="2021-03-18 00:00:00 &#43;0000 UTC">March 18, 2021</time>
                   
                 </span>
               </span>
-              <span class="ml-3 article-pagination-direction">&rarr;</span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
             </a>
           
         </span>
@@ -381,10 +463,23 @@ ACM, New York, NY, USA, 12 pages. <a href="https://doi.org/10.1145/3442381.34499
   
 
 
+      
     </footer>
-    
   </article>
-</main><footer class="py-10">
+
+        
+          <div class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12">
+            <a
+              href="#the-top"
+              class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+              aria-label="Scroll to top"
+              title="Scroll to top"
+            >
+              &uarr;
+            </a>
+          </div>
+        
+      </main><footer class="py-10">
   
   
   <div class="flex justify-between">
@@ -392,7 +487,7 @@ ACM, New York, NY, USA, 12 pages. <a href="https://doi.org/10.1145/3442381.34499
       
       <p class="text-sm text-neutral-500 dark:text-neutral-400">
           &copy;
-          2022
+          2023
           Matt Johnson
       </p>
       
@@ -407,42 +502,11 @@ ACM, New York, NY, USA, 12 pages. <a href="https://doi.org/10.1145/3442381.34499
     </div>
     
     
-      <div class="text-sm cursor-pointer text-neutral-400 dark:text-neutral-500">
-        <button
-          id="dark-toggle"
-          onclick="setPreferredAppearance('dark');"
-          oncontextmenu="setPreferredAppearance('default'); return false;"
-          class="inline px-2 py-1 border rounded-md border-neutral-200 dark:hidden hover:text-primary-500 hover:border-primary-400"
-          title="Switch to dark appearance"
-        >
-          
-
-  <span class="relative inline-block align-text-bottom icon">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="moon" class="svg-inline--fa fa-moon fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"></path></svg>
-  </span>
-
-
-        </button>
-        <button
-          id="light-toggle"
-          onclick="setPreferredAppearance('light');"
-          oncontextmenu="setPreferredAppearance('default'); return false;"
-          class="hidden px-2 py-1 border rounded-md cursor-pointer dark:inline border-neutral-700 hover:text-primary-400 hover:border-primary-500"
-          title="Switch to light appearance"
-        >
-          
-
-  <span class="relative inline-block align-text-bottom icon">
-    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="sun" class="svg-inline--fa fa-sun fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 160c-52.9 0-96 43.1-96 96s43.1 96 96 96 96-43.1 96-96-43.1-96-96-96zm246.4 80.5l-94.7-47.3 33.5-100.4c4.5-13.6-8.4-26.5-21.9-21.9l-100.4 33.5-47.4-94.8c-6.4-12.8-24.6-12.8-31 0l-47.3 94.7L92.7 70.8c-13.6-4.5-26.5 8.4-21.9 21.9l33.5 100.4-94.7 47.4c-12.8 6.4-12.8 24.6 0 31l94.7 47.3-33.5 100.5c-4.5 13.6 8.4 26.5 21.9 21.9l100.4-33.5 47.3 94.7c6.4 12.8 24.6 12.8 31 0l47.3-94.7 100.4 33.5c13.6 4.5 26.5-8.4 21.9-21.9l-33.5-100.4 94.7-47.3c13-6.5 13-24.7.2-31.1zm-155.9 106c-49.9 49.9-131.1 49.9-181 0-49.9-49.9-49.9-131.1 0-181 49.9-49.9 131.1-49.9 181 0 49.9 49.9 49.9 131.1 0 181z"></path></svg>
-  </span>
-
-
-        </button>
-      </div>
-    
   </div>
   
   
 </footer>
-</body>
+
+    </div>
+  </body>
 </html>

@@ -6,7 +6,16 @@
     <description>Recent content on matt9j:Matt Johnson</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 28 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://matt9j.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Waffles from Scratch</title>
+      <link>https://matt9j.net/recipes/scratch-waffles/</link>
+      <pubDate>Sun, 28 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://matt9j.net/recipes/scratch-waffles/</guid>
+      <description>Who needs a box and all that plastic</description>
+    </item>
+    
     <item>
       <title>Green Bean Casserole</title>
       <link>https://matt9j.net/recipes/green-bean-casserole/</link>
@@ -211,7 +220,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://matt9j.net/about/</guid>
-      <description>Work # I am currently a graduate student at the University of Washington (&amp;ldquo;U-dub&amp;rdquo;) affiliated with the ICTD Lab and Prof.</description>
+      <description>Work # I am currently a software engineer at SpaceX in Redmond, WA working on Starlink, a global low-earth-orbit satellite Internet service.</description>
     </item>
     
     <item>
