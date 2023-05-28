@@ -7,29 +7,30 @@ sharingLinks: false
 ---
 
 ## Work
-I am currently a graduate student at the University of Washington ("U-dub")
-affiliated with the [ICTD Lab](https://ictd.cs.washington.edu) and [Prof. Kurtis
-Heimerl](https://kurti.sh). I'm passionate about ubiquitious global
+I am currently a software engineer at SpaceX in Redmond, WA working on
+[Starlink](https://www.starlink.com/technology), a global low-earth-orbit
+satellite Internet service. I'm passionate about ubiquitous global
 connectivity, and am excited to work towards a world where everyone can get a
 performant, reliable, and affordable Internet connection should they desire it.
 
-My PhD research focuses on Community Cellular Networking with an emphasis on the
-challenges of implementing and sustaining Community Cellular networks in the 4G
-and 5G era. I also have some ongoing work in cellular network security and a
-general interest in mobile ad-hoc and mesh networking. I received the [Borriello
+Previously I was a graduate student at the University of Washington ("U-dub")
+affiliated with the [ICTD Lab](https://ictd.cs.washington.edu) and [Prof. Kurtis
+Heimerl](https://kurti.sh). My PhD research focused on Community Cellular
+Networking with an emphasis on the challenges of implementing and sustaining
+Community Cellular networks in the 4G and 5G era. I received the [Borriello
 Fellowship](https://www.cs.washington.edu/students/grad/awardrecipients/borriello)
 in 2016, and a 5-year [National Science Foundation Graduate Research
-Fellowship](https://www.nsfgrfp.org/) in 2018. Through my work at UW I've gotten
-the opportunity to travel significantly and deploy community cellular networks
-both within the US and abroad. I was one of the developers on, and now the
-current maintaner of, our lab's suite of tools for deploying and operating
-community cellular networks (the **Co**mmunity**LTE** project,
+Fellowship](https://www.nsfgrfp.org/) in 2018. Through my work at UW I got the
+opportunity to travel significantly and deploy community cellular networks both
+within the US and abroad. I was one of the developers on, and now the current
+maintainer of, our lab's suite of tools for deploying and operating community
+cellular networks (the **Co**mmunity**LTE** project,
 [CoLTE](https://github.com/uw-ictd/colte)).
 
-Prior to starting at UW, I was a member on the embedded dsp/mac team at
-[TrellisWare Technologies](https://www.trellisware.com/). There I helped design
-and implement the TSM-X waveform's medium access control protocol, optimized the
-power utilization of the legacy TSM waveform, and developed a new "Position and
+Before UW, I was a member on the embedded dsp/mac team at [TrellisWare
+Technologies](https://www.trellisware.com/). There I helped design and implement
+the TSM-X waveform's medium access control protocol, optimized the power
+utilization of the legacy TSM waveform, and developed a new "Position and
 Location Information" (PLI) subsystem (among other projects). I have also had
 the opportunity to intern with the [Project
 Loon](https://x.company/projects/loon/) backhaul software team and the [National
@@ -45,8 +46,3 @@ currently reside in Seattle, Washington, USA.
 
 ## Other Stuff
 You can find a [PDF version of my resume here](/matt9j-resume.pdf).
-
-A lot of my commercial work, volunteer activity, and smaller projects are
-covered in my online portfolio site. Someday I may migrate everything to one
-service, but for now check out https://cargocollective.com/matt9johnson for
-anything you don't find here : )
