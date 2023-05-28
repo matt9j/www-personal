@@ -5,9 +5,9 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://jpanther.github.io/congo/docs/configuration/#theme-parameters
 
-colorScheme = "congo"
-darkMode = "auto"
-darkToggle = true
+colorScheme = "ocean"
+autoSwitchAppearance = true
+defaultAppearance = "light" # valid options: light or dark
 # logo = "img/logo.jpg"
 description = "The personal site of Matt Johnson."
 mainSections = ["post", "publication"]
