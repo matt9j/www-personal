@@ -20,7 +20,7 @@ canola, and/or high oleic soybean oil)..." That made waffles a choice between
 rolling the dice on allergies or settling for a mix we felt just didn't taste as
 good.
 
-Our friends K. and T. made these waffles for us at a DnD night though, and they
+Our friends Kim and Tal made these waffles for us at a DnD night though, and they
 were phenomenal! Better than Bisquick with a nice chewy texture and lots of
 flavor, our new staple. Is the yogurt magic??? Probably...
 
